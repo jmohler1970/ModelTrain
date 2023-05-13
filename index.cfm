@@ -117,11 +117,11 @@
 	<p></p>
 	<p></p>
 
-	<cfinclude template="NorthModel400x300.svg">
+	<cfinclude template="images/NorthModel400x300.svg">
 
 	<cfif url.keyExists("mode")>
 		<br>
-		<cfinclude template="SouthModel400x300.svg">
+		<cfinclude template="images/SouthModel400x300.svg">
 	</cfif>
 
 		<h3>Control levels</h3>
