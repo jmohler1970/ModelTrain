@@ -1,0 +1,393 @@
+<svg id="south"  width="400" height="300">
+	<style>
+
+	g.powered circle.route {
+		fill: #fb0 !important
+	}
+	
+	g.unpowered circle.route {
+		fill: #555;
+		r : 3.5px;
+	}
+
+	/* As in power pack*/
+	circle.pack {
+		cursor: pointer;
+		fill: yellow;
+		r : 5px;
+	}
+
+	/* manual override push buttons to move switch */
+	circle.manual {
+		r : 3.5px;
+		fill : lime
+	}
+
+	/* defaults to diverge */
+	g.signal circle {
+		fill : red
+	}
+	
+	g.go circle {
+		fill : yellowgreen
+	}
+	
+	.small {
+		font: 7px sans-serif;
+	}
+	.heavy {
+		font: bold 9px sans-serif;
+	}
+
+	circle.twtade {
+		fill:black
+	}
+	</style>
+
+	<defs>
+		<g id="signal" class="signal">
+			<polygon points="0,12 12,12 
+				12,7 15,7 15,5 12,5 
+				12,0 4,0 0,4" 
+				fill="gainsboro"
+				/>
+			<circle cx="6" cy="6" r="3.5"  />
+		</g>
+
+		<g id="signal180" transform='rotate(180)' class="signal">
+			<polygon points="0,12 12,12 
+				12,7 15,7 15,5 12,5 
+				12,0 4,0 0,4"
+				fill="gainsboro" />
+			<circle cx="6" cy="6" r="3.5"  />
+		</g>
+
+		<g id="signal270" transform='rotate(270)' class="signal">
+			<polygon points="0,12 12,12 
+				12,7 15,7 15,5 12,5 
+				12,0 4,0 0,4"
+				fill="gainsboro" />
+			<circle cx="6" cy="6" r="3.5"  />
+		</g>
+	</defs>
+
+	<!-- Words -->
+	<text x="60" y="135" class="heavy">Gleis 1</text>
+	<text x="60"  y="165" class="heavy">Gleis 2</text>
+	<text x="240" y="195" class="heavy">Gleis 3</text>
+	<text x="240" y="225" class="heavy">Gleis 4</text>
+	<text x="240" y="255" class="heavy">Gleis 5</text>
+	<text x="240" y="285" class="heavy">Gleis 6</text>
+	<text x="240" y="105" class="heavy">Gleis 7</text>
+	<text x="102" y="63" class="heavy">Gleis 8</text>
+
+	<!-- mini panel -->
+	<!--
+	<circle cx="120" cy="30" r="3.5" fill="red" />
+	<text x="130" y="33" class="small">Arduino Reset</text>
+	<circle cx="120" cy="50" r="3.5" fill="blue" />
+	<text x="130" y="53" class="small">Test Panel</text>
+	<circle cx="120" cy="70" r="3.5" fill="blue" />
+	<text x="130" y="73" class="small">Alternate</text>
+	-->
+
+	<!-- yard sidings begin -->
+	<line x1="209" y1="90" x2="270" y2="90" 
+		stroke="violet" stroke-width="5" />
+
+	<line x1="189" y1="120" x2="210" y2="90" 
+		stroke="violet" stroke-width="5" />
+
+	<!-- Track 3 -->
+	<line x1="170" y1="150" x2="190" y2="180" 
+		stroke="skyblue" stroke-width="5" />
+
+	<line x1="270" y1="150" x2="250" y2="180" 
+		stroke="skyblue" stroke-width="5" />
+
+	<line x1="190" y1="180" x2="320" y2="180" 
+		stroke="skyblue" stroke-width="5" />
+
+
+	<!-- crossover-->
+	<line x1="335" y1="150" x2="305" y2="120" 
+		stroke="black" stroke-width="5" />
+
+
+	<!-- intermodal connector -->
+	<line x1="90" y1="150" x2="170" y2="270" 
+		stroke="skyblue" stroke-width="5" />
+
+	<!-- intermodal 4-->
+	<line x1="128" y1="210" x2="280" y2="210" 
+		stroke="skyblue" stroke-width="5" />
+
+	<!-- intermodal 5-->
+	<line x1="148" y1="240" x2="280" y2="240" 
+		stroke="skyblue" stroke-width="5" />
+
+	<!-- intermodal 6-->
+	<line x1="168" y1="270" x2="250" y2="270" 
+		stroke="skyblue" stroke-width="5" />
+
+
+	<!-- reversing loop -->
+	<path d="M140,95 a25,25 0 0,1 -25,25" 
+		fill="none" stroke="blue" stroke-width="5" />
+
+	<line x1="140" y1="0" x2="140" y2="95" 
+		stroke="blue" stroke-width="5" />
+
+	
+	<!-- inner main line -->
+	<line x1="20" y1="0" x2="20" y2="95"
+		stroke="black" stroke-width="10" />
+
+	<path d="M45,120 a25,25 0 0,1 -25,-25" 
+		fill="none" stroke="black" stroke-width="10" />
+
+	<line x1="45" y1="120" x2="335" y2="120" 
+		stroke="black" stroke-width="10"/>
+
+	<path d="M360,95 a25,25 0 0,1 -25,25" 
+		fill="none" stroke="black" stroke-width="10" />
+
+	<line x1="360" y1="0" x2="360" y2="95" 
+		stroke="black" stroke-width="10" />
+
+	
+	<!-- outer main line -->
+	<line x1="40" y1="0" x2="40" y2="125" 
+		stroke="black" stroke-width="10" />
+
+	<path d="M65,150 a25,25 0 0,1 -25,-25" 
+		fill="none" stroke="black" stroke-width="10" />
+
+	<line x1="63" y1="150" x2="355" y2="150" 
+		stroke="black" stroke-width="10" />
+
+	<path d="M380,125 a25,25 0 0,1 -25,25" 
+		fill="none" stroke="black" stroke-width="10" />	
+
+	<line x1="380" y1="0" x2="380" y2="125" 
+		stroke="black" stroke-width="10" />
+
+
+	<!-- bumpers -->
+	<line x1="270" y1="80" x2="270" y2="100" 
+		stroke="violet" stroke-width="3" />
+
+	<line x1="320" y1="170" x2="320" y2="190" 
+		stroke="skyblue" stroke-width="3" />
+
+	<line x1="280" y1="200" x2="280" y2="220" 
+		stroke="skyblue" stroke-width="3" />
+
+	<line x1="280" y1="230" x2="280" y2="250" 
+		stroke="skyblue" stroke-width="3" />
+
+	<line x1="250" y1="260" x2="250" y2="280" 
+		stroke="skyblue" stroke-width="3" />
+
+	<!-- yard sidings end -->
+
+
+	<!-- Track 1 -->
+	<g id="gleis1_1" class="unpowered">
+		<circle cx="20" cy="30" class="pack" />
+		<circle cx="20" cy="60" class="route" />
+		<circle cx="20" cy="90"  class="route" />
+		<circle cx="60" cy="120"  class="route" />
+		<circle cx="80" cy="120"  class="route" />
+		<circle cx="100" cy="120"  class="route" />
+		<circle cx="120" cy="120"  class="route" />
+	</g>
+
+	<g id="gleis1_2" class="unpowered">
+		<circle cx="140" cy="120" class="manual" />
+		<circle cx="160" cy="120" class="pack" />
+		<circle cx="180" cy="120" class="route" />
+
+		<use x="155" y="100" href="#signal" />
+	</g>
+
+	<g id="gleis1_3" class="unpowered">
+		<circle cx="200" cy="120" class="route" />
+		<circle cx="220" cy="120" class="manual" />
+		<circle cx="240" cy="120" class="pack" />
+		<circle cx="260" cy="120" class="manual" />
+		<circle cx="280" cy="120" class="route" />
+		<circle cx="300" cy="120" class="route" />
+		<use x="215" y="100" href="#signal" />
+		<use x="266" y="142" href="#signal180"  />
+	</g>
+
+	<g id="gleis1_4" class="unpowered">
+		<circle cx="320" cy="120" class="route" />
+		<circle cx="340" cy="120" class="manual" />
+		<circle cx="360" cy="90" class="route" />
+		<circle cx="360" cy="60" class="route" />
+		<circle cx="360" cy="30" class="pack" />
+
+		<use x="295" y="100" href="#signal" />
+	</g>
+
+
+
+	<g id="gleis12" class="unpowered">
+		<circle cx="320" cy="135" class="route" /><!-- cross over from 1 to 2 -->
+	</g>
+
+	<!-- Outer loop start-->
+	<g id="gleis2_1" class="unpowered">
+		<circle cx="40" cy="30" class="pack" />
+
+		<circle cx="40" cy="60" class="route" />
+		<circle cx="40" cy="90" class="route" />
+		<circle cx="40" cy="120" class="route" />
+		<!-- curve -->
+		<circle cx="60" cy="150" class="route" />
+		<circle cx="80" cy="150" class="route" />
+		
+	</g>
+
+	<g id="gleis2_2" class="unpowered">
+		<circle cx="100" cy="150" class="route" />
+		<circle cx="120" cy="150" class="manual" />
+		<circle cx="140" cy="150" class="pack" />
+		<circle cx="160" cy="150" class="route" />
+		
+		<use x="115" y="160" href="#signal" />
+	</g>
+
+
+	<g id="gleis2_3" class="unpowered">
+		<circle cx="180" cy="150" class="route" />
+		<circle cx="200" cy="150" class="manual" />
+		<circle cx="220" cy="150" class="pack" />
+		<circle cx="240" cy="150" class="manual" />
+		<circle cx="260" cy="150" class="route" />
+
+		<use x="175" y="130" href="#signal" />
+		<use x="246" y="170" href="#signal180" />
+	</g>
+
+	<g id="gleis2_4" class="unpowered">
+		<circle cx="280" cy="150" class="route" />
+		<circle cx="300" cy="150" class="pack" />
+		<circle cx="320" cy="150" class="route" />
+		<use x="307" y="170" href="#signal180" />
+	</g>
+
+	<g id="gleis2_5" class="unpowered">
+		<circle cx="340" cy="150" class="route" />
+		<circle cx="360" cy="150" class="manual" />
+		<circle cx="380" cy="120" class="route" />
+		<circle cx="380" cy="90" class="route" />
+		<circle cx="380" cy="60" class="route" />
+		<circle cx="380" cy="30" class="pack" />
+	</g>
+	
+
+	<!-- siding start -->
+	<g id="gleis3_1" class="unpowered">
+		<circle cx="180" cy="165" class="route" />
+		<circle cx="200" cy="180" class="manual" />
+		<circle cx="220" cy="180" class="pack" />
+		<circle cx="240" cy="180" class="route" />
+
+		<use x="194" y="160" href="#signal" />
+	</g>
+
+	<g id="gleis32" class="unpowered">
+		<circle cx="260" cy="165" class="route" /><!-- cross over-->
+
+	</g>
+
+	<g id="gleis3_2" class="unpowered">
+		<circle cx="260" cy="180" class="route" />
+		<circle cx="280" cy="180" class="manual" />
+		<circle cx="300" cy="180" class="pack" />
+
+		<use x="274" y="160" href="#signal" />
+	</g>
+
+	<!-- Outer loop end -->
+
+	<!-- Yard start-->
+	<g id="gleis4_1" class="unpowered">
+		<circle cx="140" cy="210" class="route" />
+		<circle cx="160" cy="210" class="manual" />
+		<circle cx="180" cy="210" class="route" />
+		<circle cx="200" cy="210" class="route" />
+		<circle cx="220" cy="210" class="route" />
+		<circle cx="240" cy="210" class="route" />
+		<circle cx="260" cy="210" class="pack" />
+
+		<use x="154" y="190" href="#signal" />
+	</g>
+
+	<g id="gleis5_1" class="unpowered">
+		<circle cx="160" cy="240" class="route" />
+		<circle cx="180" cy="240" class="manual" />
+		<circle cx="200" cy="240" class="route" />
+		<circle cx="220" cy="240" class="route" />
+		<circle cx="240" cy="240" class="route" />
+		<circle cx="260" cy="240" class="pack" />
+
+		<use x="174" y="220" href="#signal" />
+	</g>
+
+	<g id="gleis6_1" class="unpowered">	
+		<circle cx="100" cy="165" class="route" />
+
+		<circle cx="120" cy="195" class="route" />
+	</g>
+	<g id="gleis6_2" class="unpowered">	
+		<circle cx="140" cy="225" class="route" />
+	</g>
+
+	<g id="gleis6_3" class="unpowered">
+		<circle cx="160" cy="255" class="route" />
+		<circle cx="180" cy="270" class="manual" />
+		<circle cx="200" cy="270" class="route" />
+		<circle cx="220" cy="270" class="route" />
+		<circle cx="240" cy="270" class="pack" />
+
+		<use x="174" y="250" href="#signal" />
+	</g>
+
+
+	<g id="gleis7_1" class="unpowered">
+		<circle cx="220" cy="90" class="manual" />
+		<circle cx="200" cy="105" class="route" />
+		<circle cx="240" cy="90" class="pack" />
+		<circle cx="260" cy="90" class="route" />
+
+		<use x="215" y="70" href="#signal" />
+	</g>	
+	<!-- Yard end -->
+
+	<!-- Turn around-->
+	<g id="gleis8_1" class="unpowered">
+		<circle cx="140" cy="30" class="pack" />
+		<circle cx="140" cy="60" class="route" />
+		<circle cx="140" cy="90" class="manual" />
+
+		<use x="120" y="96" href="#signal270" />
+	</g>
+	
+
+	
+	<!-- Non track holes -->
+	<!--
+	<circle cx="375" cy="30" r="11" class="twtade" />
+	<text x="360" y="50" class="small">Gleis 1, 0</text>
+	<circle cx="425" cy="30" r="11" class="twtade" />
+	<text x="410" y="50" class="small">Gleis 2, 3</text>
+	<circle cx="475" cy="30" r="11" class="twtade" />
+	<text x="460" y="50" class="small">Gleis 4, 5, 6</text>
+	-->
+
+
+</svg>

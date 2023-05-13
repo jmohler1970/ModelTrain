@@ -1,0 +1,402 @@
+<svg width="600" height="300">
+	<style>
+	.small {
+		font: 7px sans-serif;
+	}
+	.heavy {
+		font: bold 13px sans-serif;
+	}
+
+	circle.twtade {
+		fill:black
+	}
+	</style>
+
+	<!-- Words -->
+	<text x="242" y="140" class="heavy">Gleis 1</text>
+	<text x="242" y="170" class="heavy">Gleis 2</text>
+	<text x="242" y="200" class="heavy">Gleis 3</text>
+	<text x="42" y="230" class="heavy">Gleis 4</text>
+	<text x="42" y="260" class="heavy">Gleis 5</text>
+	<text x="120" y="105" class="heavy">Gleis 6</text>
+
+	<!-- mini panel -->
+	<circle cx="95" cy="30" r="3.5" fill="red" />
+	<text x="105" y="33" class="small">Arduino Reset</text>
+	<circle cx="95" cy="50" r="3.5" fill="blue" />
+	<text x="105" y="53" class="small">Test Panel</text>
+	<circle cx="95" cy="70" r="3.5" fill="blue" />
+	<text x="105" y="73" class="small">Alternate</text>
+
+	<circle cx="185" cy="30" r="3.5" fill="blue" />
+	<text x="195" y="33" class="small">Day</text>
+	<circle cx="185" cy="50" r="3.5" fill="blue" />
+	<text x="195" y="53" class="small">Evening</text>
+	<circle cx="185" cy="70" r="3.5" fill="blue" />
+	<text x="195" y="73" class="small">Holiday</text>
+
+
+	<!-- Station sidings -->
+	<line x1="118" y1="210" x2="463" y2="210" 
+		stroke="skyblue" stroke-width="5" />
+
+	<line x1="80" y1="180" x2="105" y2="205" 
+		stroke="skyblue" stroke-width="5" />
+
+	<path d=" M118,210 A 20 20 0 0 1 104,204"
+		stroke="skyblue" stroke-width="5" />
+
+	<line x1="500" y1="180" x2="475" y2="205" 
+		stroke="skyblue" stroke-width="5" />
+
+	<path d="M476,204 A 20 20 0 0 1 462,210"
+		stroke="skyblue" stroke-width="5" />	
+
+	<line x1="10" y1="240" x2="170" y2="240" 
+		stroke="skyblue" stroke-width="5" />
+
+	<line x1="10" y1="270" x2="132" y2="270"
+		stroke="skyblue" stroke-width="5" />
+
+	<path d="M146,264 A 20 20 0 0 1 132,270"
+		stroke="skyblue" stroke-width="5" />	
+
+	<line x1="145" y1="265" x2="200" y2="210" 
+		stroke="skyblue" stroke-width="5" />
+
+	<!-- bumpers -->
+	<line x1="10" y1="230" x2="10" y2="250" 
+		stroke="skyblue" stroke-width="5" />	
+
+	<line x1="10" y1="260" x2="10" y2="280" 
+		stroke="skyblue" stroke-width="5" />	
+
+	<!-- end station -->
+
+	<!-- tramway -->
+	<line x1="80" y1="90" x2="230" y2="90" 
+		stroke="violet" stroke-width="5" />
+
+	<path d="M245,70 a20,20 0 0,1 -20,20" 
+		fill="none" stroke="violet" stroke-width="5" />	
+
+	<line x1="245" y1="0" x2="245" y2="70" 
+		stroke="violet" stroke-width="5" />
+
+	<line x1="80" y1="80" x2="80" y2="100" 
+		stroke="violet" stroke-width="5" />
+
+	<line x1="170" y1="90" x2="230" y2="150" 
+		stroke="violet" stroke-width="5" />
+
+	<!-- reversing loop -->
+	<line x1="290" y1="150" x2="330" y2="110" 
+		stroke="violet" stroke-width="5" />
+
+	<path d=" M335,97 A20,20 0 0 1 329,111" 
+		stroke="violet" stroke-width="5"/>
+	
+	<line x1="335" y1="0" x2="335" y2="100" 
+		stroke="violet" stroke-width="5" />
+
+	<!-- inner main line -->
+	<line x1="35" y1="0" x2="35" y2="125"
+		stroke="black" stroke-width="10" />
+
+	<path d="M60,150 a25,25 0 0,1 -25,-25" 
+		fill="none" stroke="black" stroke-width="10" />	
+
+	<line x1="60" y1="150" x2="520" y2="150" 
+		style="stroke:black;stroke-width:10" />
+
+	<path d="M545,125 a25,25 0 0,1 -25,25" 
+		fill="none" stroke="black" stroke-width="10" />	
+
+	<line x1="545" y1="0" x2="545" y2="125" 
+		stroke="black" stroke-width="10" />
+
+	<!-- outer main line -->
+	<line x1="5" y1="0" x2="5" y2="125" 
+		stroke="black" stroke-width="10" />
+
+	<path d="M60,180 a55,55 0 0,1 -55,-55" 
+		fill="none" stroke="black" stroke-width="10" />	
+
+	<line x1="60" y1="180" x2="520" y2="180" 
+		stroke="black" stroke-width="10" />
+
+	<path d="M575,125 a55,55 0 0,1 -55,55" 
+		fill="none" stroke="black" stroke-width="10" />	
+
+	<line x1="575" y1="0" x2="575" y2="125" 
+		stroke="black" stroke-width="10" />
+
+	<!-- Inner to outer cross overs -->
+	<line x1="82.5" y1="150" x2="107.5" y2="180" 
+		style="stroke:black;stroke-width:5;" />
+		<!-- no idea why this needs halves and the other doesn't-->
+
+	<line x1="500" y1="150" x2="470" y2="180" 
+		style="stroke:black;stroke-width:5;" />
+
+	<!-- Track holes -->
+	<!-- Inner loop -->
+	<circle cx="35" cy="30" r="3.5" fill="gray" />
+	<circle cx="35" cy="60" r="3.5" fill="orange" />
+	<circle cx="35" cy="90" r="3.5" fill="orange" />
+	<circle cx="35" cy="120" r="3.5" fill="orange" />
+	<!-- curve -->
+	<circle cx="65" cy="150" r="3.5" fill="green" />
+	<circle cx="95" cy="150" r="3.5" fill="orange" />
+	<circle cx="125" cy="150" r="3.5" fill="green" />
+	<circle cx="155" cy="150" r="3.5" fill="gray" />
+	<circle cx="185" cy="150" r="3.5" fill="green" />
+	<circle cx="215" cy="150" r="3.5" fill="orange" />
+	<!-- switch-->
+	<circle cx="245" cy="150" r="3.5" fill="orange" />
+	<circle cx="275" cy="150" r="3.5" fill="gray" />
+	<!-- switch-->
+	<circle cx="305" cy="150" r="3.5" fill="orange" />
+	<circle cx="335" cy="150" r="3.5" fill="green" />
+	<circle cx="365" cy="150" r="3.5" fill="orange" />
+	<circle cx="395" cy="150" r="3.5" fill="gray" />
+	<circle cx="425" cy="150" r="3.5" fill="orange" />
+	<circle cx="455" cy="150" r="3.5" fill="green" />
+	<circle cx="485" cy="150" r="3.5" fill="orange" />
+	<circle cx="515" cy="150" r="3.5" fill="green" />
+	<!-- curve -->
+	<circle cx="545" cy="120" r="3.5" fill="orange" />
+	<circle cx="545" cy="90" r="3.5" fill="orange" />
+	<circle cx="545" cy="60" r="3.5" fill="orange" />
+	<circle cx="545" cy="30" r="3.5" fill="gray" />
+
+	<!-- Outer loop -->
+	<circle cx="5" cy="30" r="3.5" fill="gray" />
+	<circle cx="5" cy="60" r="3.5" fill="orange" />
+	<circle cx="5" cy="90" r="3.5" fill="orange" />
+	<circle cx="5" cy="120" r="3.5" fill="orange" />
+	<!-- start curve -->
+	<circle cx="24" cy="166" r="3.5" fill="orange" />
+	<!-- end curve -->
+	<circle cx="65" cy="180" r="3.5" fill="green" />
+	<circle cx="95" cy="180" r="3.5" fill="orange" />
+	<circle cx="95" cy="165" r="3.5" fill="orange" /><!-- crossover -->
+	<circle cx="95" cy="195" r="3.5" fill="orange" /><!-- station -->
+	<circle cx="125" cy="180" r="3.5" fill="green" />
+	<circle cx="155" cy="180" r="3.5" fill="orange" />
+	<circle cx="185" cy="180" r="3.5" fill="orange" />
+	<circle cx="215" cy="180" r="3.5" fill="orange" />
+	<circle cx="245" cy="180" r="3.5" fill="orange" />
+	<circle cx="275" cy="180" r="3.5" fill="orange" />
+	<circle cx="305" cy="180" r="3.5" fill="gray" />
+	<circle cx="335" cy="180" r="3.5" fill="orange" />
+	<circle cx="365" cy="180" r="3.5" fill="orange" />
+	<circle cx="395" cy="180" r="3.5" fill="orange" />
+	<circle cx="425" cy="180" r="3.5" fill="orange" />
+	<circle cx="455" cy="180" r="3.5" fill="green" />
+	<circle cx="485" cy="180" r="3.5" fill="orange" />
+	<circle cx="485" cy="165" r="3.5" fill="orange" /><!-- crossover -->
+	<circle cx="485" cy="195" r="3.5" fill="orange" /><!-- station -->
+	<circle cx="515" cy="180" r="3.5" fill="green" />
+
+	<!-- start curve -->
+	<circle cx="556" cy="166" r="3.5" fill="orange" />
+	<!-- end curve -->
+
+	<circle cx="575" cy="60" r="3.5" fill="orange" />
+	<circle cx="575" cy="90" r="3.5" fill="orange" />
+	<circle cx="575" cy="120" r="3.5" fill="orange" />
+	<circle cx="575" cy="30" r="3.5" fill="gray" />
+	<!-- end outer loop -->
+
+	<!-- start station -->
+	<circle cx="125" cy="210" r="3.5" fill="green" />
+	<circle cx="155" cy="210" r="3.5" fill="green" />
+	<circle cx="185" cy="210" r="3.5" fill="orange" />
+	<circle cx="185" cy="225" r="3.5" fill="orange" /><!-- switch -->
+	<circle cx="215" cy="210" r="3.5" fill="orange" />
+	<circle cx="245" cy="210" r="3.5" fill="orange" />
+	<circle cx="275" cy="210" r="3.5" fill="orange" />
+	<circle cx="305" cy="210" r="3.5" fill="orange" />
+	<circle cx="335" cy="210" r="3.5" fill="gray" />
+	<circle cx="365" cy="210" r="3.5" fill="orange" />
+	<circle cx="395" cy="210" r="3.5" fill="orange" />
+	<circle cx="425" cy="210" r="3.5" fill="orange" />
+	<circle cx="455" cy="210" r="3.5" fill="green" />
+
+	<!-- Reset to stub tracks -->
+	<circle cx="35" cy="240" r="3.5" fill="gray" />
+	<circle cx="65" cy="240" r="3.5" fill="orange" />
+	<circle cx="95" cy="240" r="3.5" fill="orange" />
+	<circle cx="125" cy="240" r="3.5" fill="green" />
+	<circle cx="155" cy="240" r="3.5" fill="orange" />
+	<circle cx="155" cy="255" r="3.5" fill="orange" /><!-- switch -->
+	<circle cx="35" cy="270" r="3.5" fill="gray" />
+	<circle cx="65" cy="270" r="3.5" fill="orange" />
+	<circle cx="95" cy="270" r="3.5" fill="orange" />
+	<circle cx="125" cy="270" r="3.5" fill="green" />
+	<!-- end station -->
+
+
+	<!-- start tram -->
+	<circle cx="95" cy="90" r="3.5" fill="gray" />
+	<circle cx="125" cy="90" r="3.5" fill="orange" />
+	<circle cx="155" cy="90" r="3.5" fill="orange" />
+	<circle cx="185" cy="90" r="3.5" fill="orange" />
+	<circle cx="185" cy="105" r="3.5" fill="orange" /><!-- switch -->
+	<circle cx="215" cy="135" r="3.5" fill="orange" /><!-- switch -->
+	<circle cx="215" cy="90" r="3.5" fill="green" />
+	<circle cx="245" cy="60" r="3.5" fill="orange" />
+	<circle cx="245" cy="30" r="3.5" fill="gray" />
+	<!-- end tram -->
+
+	<!-- start reversing loop-->
+	<circle cx="335" cy="30" r="3.5" fill="gray" />
+	<circle cx="335" cy="60" r="3.5" fill="orange" />
+	<circle cx="335" cy="90" r="3.5" fill="green" />
+	<circle cx="305" cy="135" r="3.5" fill="orange" />
+	
+	<!-- Non track holes -->
+	<circle cx="485" cy="30" r="11" class="twtade" />
+	<text x="470" y="50" class="small">Gleis 1, 6</text>
+	<circle cx="485" cy="70" r="11" class="twtade" />
+	<text x="470" y="90" class="small">Gleis 2</text>
+	<circle cx="485" cy="110" r="11" class="twtade" />
+	<text x="470" y="130" class="small">Gleis 3, 4, 5</text>
+
+
+	<!-- 12 x 12 proto type-->
+	<!--
+	<polygon points="0,12 12,12 
+		12,7 15,7 15,5 12,5 
+		12,0 4,0 0,4" />
+	<circle cx="6" cy="6" r="3.5" fill="red" />
+	-->
+
+	<!-- Tram and loop -->
+	<g transform='translate(132 290) rotate(180)'>
+		<polygon points="0,12 12,12 
+			12,7 15,7 15,5 12,5 
+			12,0 4,0 0,4" />
+		<circle cx="6" cy="6" r="3.5" fill="red" />
+	</g>
+
+	<g transform='translate(317 97) rotate(270)'>
+		<polygon points="0,12 12,12 
+			12,7 15,7 15,5 12,5 
+			12,0 4,0 0,4" />
+		<circle cx="6" cy="6" r="3.5" fill="red" />
+	</g>
+	
+	<!-- Inner loop -->
+	<g transform='translate(120 130)'>
+		<polygon points="0,12 12,12 
+			12,7 15,7 15,5 12,5 
+			12,0 4,0 0,4" />
+		<circle cx="6" cy="6" r="3.5" fill="red" />
+	</g>
+
+	<g transform='translate(71 170) rotate(180)'>
+		<polygon points="0,12 12,12 
+			12,7 15,7 15,5 12,5 
+			12,0 4,0 0,4" />
+		<circle cx="6" cy="6" r="3.5" fill="red" />
+	</g>
+
+	<g transform='translate(191 170) rotate(180)'>
+		<polygon points="0,12 12,12 
+			12,7 15,7 15,5 12,5 
+			12,0 4,0 0,4" />
+		<circle cx="6" cy="6" r="3.5" fill="red" />
+	</g>
+
+	<g transform='translate(330 130)'>
+		<polygon points="0,12 12,12 
+			12,7 15,7 15,5 12,5 
+			12,0 4,0 0,4" />
+		<circle cx="6" cy="6" r="3.5" fill="red" />
+	</g>
+
+	<g transform='translate(460 170) rotate(180)'>
+		<polygon points="0,12 12,12 
+			12,7 15,7 15,5 12,5 
+			12,0 4,0 0,4" />
+		<circle cx="6" cy="6" r="3.5" fill="red" />
+	</g>
+
+	<g transform='translate(510 158)'>
+		<polygon points="0,12 12,12 
+			12,7 15,7 15,5 12,5 
+			12,0 4,0 0,4" />
+		<circle cx="6" cy="6" r="3.5" fill="red" />
+	</g>
+
+
+	<!-- Outer loop -->
+	<g transform='translate(120 160)'>
+		<polygon points="0,12 12,12 
+			12,7 15,7 15,5 12,5 
+			12,0 4,0 0,4" />
+		<circle cx="6" cy="6" r="3.5" fill="red" />
+	</g>
+
+	<g transform='translate(71 200) rotate(180)'>
+		<polygon points="0,12 12,12 
+			12,7 15,7 15,5 12,5 
+			12,0 4,0 0,4" />
+		<circle cx="6" cy="6" r="3.5" fill="red" />
+	</g>
+
+	<g transform='translate(461 200) rotate(180)'>
+		<polygon points="0,12 12,12 
+			12,7 15,7 15,5 12,5 
+			12,0 4,0 0,4" />
+		<circle cx="6" cy="6" r="3.5" fill="red" />
+	</g>
+
+	<g transform='translate(510 188)'>
+		<polygon points="0,12 12,12 
+			12,7 15,7 15,5 12,5 
+			12,0 4,0 0,4" />
+		<circle cx="6" cy="6" r="3.5" fill="red" />
+	</g>
+
+
+	<!-- station little yard -->
+	<g transform='translate(210 97)'>
+		<polygon points="0,12 12,12 
+			12,7 15,7 15,5 12,5 
+			12,0 4,0 0,4" />
+		<circle cx="6" cy="6" r="3.5" fill="red" />
+	</g>
+	<g transform='translate(132 260) rotate(180)'>
+		<polygon points="0,12 12,12 
+			12,7 15,7 15,5 12,5 
+			12,0 4,0 0,4" />
+		<circle cx="6" cy="6" r="3.5" fill="red" />
+	</g>
+
+	<g transform='translate(162 230) rotate(180)'>
+		<polygon points="0,12 12,12 
+			12,7 15,7 15,5 12,5 
+			12,0 4,0 0,4" />
+		<circle cx="6" cy="6" r="3.5" fill="red" />
+	</g>
+
+	<!-- station main part of siding yard -->
+	<g transform='translate(120 190)'>
+		<polygon points="0,12 12,12 
+			12,7 15,7 15,5 12,5 
+			12,0 4,0 0,4" />
+		<circle cx="6" cy="6" r="3.5" fill="red" />
+	</g>
+
+	<g transform='translate(462 230) rotate(180)'>
+		<polygon points="0,12 12,12 
+			12,7 15,7 15,5 12,5 
+			12,0 4,0 0,4" />
+		<circle cx="6" cy="6" r="3.5" fill="red" />
+	</g>
+
+
+</svg>
