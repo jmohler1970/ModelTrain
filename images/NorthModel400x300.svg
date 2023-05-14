@@ -16,6 +16,12 @@
 		r : 5px;
 	}
 
+	/* manual override push buttons to move switch */
+	circle.manual {
+		r : 3.5px;
+		fill : lime
+	}
+
 	.small {
 		font: 6px sans-serif;
 	}
@@ -29,9 +35,9 @@
 	</style>
 
 	<!-- Words -->
-	<text x="260" y="140" class="heavy">Gleis 1</text>
-	<text x="260" y="170" class="heavy">Gleis 2</text>
-	<text x="260" y="200" class="heavy">Gleis 3</text>
+	<text x="230" y="140" class="heavy">Gleis 1</text>
+	<text x="230" y="170" class="heavy">Gleis 2</text>
+	<text x="230" y="200" class="heavy">Gleis 3</text>
 	<text x="42" y="230" class="heavy">Gleis 4</text>
 	<text x="42" y="260" class="heavy">Gleis 5</text>
 	<text x="80" y="105" class="heavy">Gleis 6</text>
@@ -100,12 +106,12 @@
 		stroke="violet" stroke-width="5" />
 
 	<!-- reversing loop -->
-	<line x1="230" y1="150" x2="260" y2="105" 
-		stroke="blue" stroke-width="5" />
+	<path d="M280,125 a25,25 0 0,1 -25,25" 
+		fill="none" stroke="blue" stroke-width="5" />
 
 
-	<!-- Extra 1 gets rid of gap -->
-	<line x1="260" y1="0" x2="260" y2="106" 
+
+	<line x1="280" y1="0" x2="280" y2="125" 
 		stroke="blue" stroke-width="5" />
 
 	<!-- Track 1/ inner -->
@@ -156,46 +162,46 @@
 
 		<circle cx="40" cy="60" class="route" />
 		<circle cx="40" cy="90" class="route" />
-		<circle cx="40" cy="120" class="route" />
+		<circle cx="40" cy="120" class="manual" />
+		<circle cx="60" cy="150" class="route" />
 	</g>
 	<!-- curve -->
-	<circle cx="60" cy="150" r="3.5" fill="green" />
+	
 	<g id="gleis1_2" class="unpowered">
-		<circle cx="120" cy="150" class="pack" />
-
 		<circle cx="80" cy="150" class="route" />
+		<circle cx="100" cy="150" class="manual" />
+		<circle cx="120" cy="150" class="pack" />
+		<circle cx="140" cy="150" class="manual" />
 		<circle cx="160" cy="150" class="route" />
 	</g>
-	<circle cx="100" cy="150" r="3.5" fill="green" />
-	<circle cx="140" cy="150" r="3.5" fill="green" />
 	<!-- switch-->
 	
 	<!-- switch-->
 	<g id="gleis1_3" class="unpowered">
-		<circle cx="180" cy="150" class="pack" />
-
-		<circle cx="200" cy="150" class="route" />
+		<circle cx="180" cy="150" class="route" />
+		<circle cx="200" cy="150" class="manual" />
+		<circle cx="220" cy="150" class="route" />
+		<circle cx="240" cy="150" class="pack" />
+		<circle cx="260" cy="150" class="route" />
 	</g>
 
 	<g id="gleis1_4" class="unpowered">
-		<circle cx="260" cy="150" class="pack" />
 
-		<circle cx="240" cy="150" class="route" />
 		<circle cx="280" cy="150" class="route" />
+		<circle cx="300" cy="150" class="manual" />
 		<circle cx="320" cy="150" class="route" />
 	</g>
-	<circle cx="220" cy="150" r="3.5" fill="green" />
-	
-	<circle cx="300" cy="150" r="3.5" fill="green" />
 
-	<circle cx="340" cy="150" r="3.5" fill="green" />
+
+
 	<!-- curve -->
 	<g id="gleis1_5" class="unpowered">
-		<circle cx="360" cy="30" class="pack" />
+		<circle cx="360" cy="120" class="manual" />
+		<circle cx="340" cy="150" class="route" />
 
-		<circle cx="360" cy="120" class="route" />
 		<circle cx="360" cy="90" class="route" />
 		<circle cx="360" cy="60" class="route" />
+		<circle cx="360" cy="30" class="pack" />
 	</g>
 	
 
@@ -208,7 +214,7 @@
 		<circle cx="20" cy="90" class="route" />
 		<circle cx="20" cy="120" class="route" />
 		<circle cx="20" cy="150" class="route" />
-		<circle cx="40" cy="180" r="3.5" fill="green" />
+		<circle cx="40" cy="180" class="manual" />
 
 		<circle cx="60" cy="180" class="route" />
 	</g>
@@ -222,11 +228,11 @@
 	</g>
 
 
-	<circle cx="100" cy="180" r="3.5" fill="green" />
 	
 
 	<g id="gleis2_3" class="unpowered">
-		<circle cx="120" cy="180" class="route" />
+		<circle cx="100" cy="180" class="route" />
+		<circle cx="120" cy="180" class="manual" />
 		<circle cx="140" cy="180" class="route" />
 		<circle cx="160" cy="180" class="route" />
 		<circle cx="180" cy="180" class="route" />
@@ -236,9 +242,10 @@
 		<circle cx="220" cy="180" class="route" />
 		<circle cx="240" cy="180" class="route" />
 		<circle cx="260" cy="180" class="route" />
-		<circle cx="280" cy="180" class="route" />
+		<circle cx="280" cy="180" class="manual" />
+		<circle cx="300" cy="180" class="route" />
 	</g>
-	<circle cx="300" cy="180" r="3.5" fill="green" />
+	
 	<g id="gleis2_4" class="unpowered">
 		<circle cx="320" cy="180" class="route" />
 	</g>
@@ -250,7 +257,7 @@
 	<!-- start curve -->
 	<g id="gleis2_5" class="unpowered">
 		<circle cx="340" cy="180" class="route" />
-		<circle cx="360" cy="180" r="3.5" fill="green" />
+		<circle cx="360" cy="180" class="manual" />
 		<circle cx="380" cy="150" class="route" />
 		<circle cx="380" cy="120" class="route" />
 		<circle cx="380" cy="90" class="route" />
@@ -262,10 +269,10 @@
 	<!-- end outer loop -->
 
 	<!-- Track 3 start station -->
-	<circle cx="100" cy="210" r="3.5" fill="green" />
-	<circle cx="120" cy="210" r="3.5" fill="green" />
 	<g id="gleis3_1" class="unpowered">
-		<circle cx="80" cy="195" class="route" /><!-- station -->
+		<circle cx="80" cy="195" class="route" />
+		<circle cx="100" cy="210" class="manual" />
+		<circle cx="120" cy="210" class="manual" />
 		<circle cx="140" cy="210" class="route" />
 	</g>
 
@@ -279,33 +286,32 @@
 		<circle cx="240" cy="210" class="route" />
 		<circle cx="260" cy="210" class="route" />
 		<circle cx="280" cy="210" class="route" />
+		<circle cx="300" cy="210" class="manual" />
 		<circle cx="320" cy="195" class="route" /><!-- station -->
 	</g>
-	<circle cx="300" cy="210" r="3.5" fill="green" />
+	
 
 
 	<!-- Reset to stub tracks -->
 	
-	<circle cx="100" cy="240" r="3.5" fill="green" />
 
 	<g id="gleis4_1" class="unpowered">
 		<circle cx="40" cy="240" class="pack" />
-	
 		<circle cx="60" cy="240" class="route" />
 		<circle cx="80" cy="240" class="route" />
+		<circle cx="100" cy="240" class="manual" />
 		<circle cx="120" cy="240" class="route" />
 	</g>
 
 	
-	<circle cx="100" cy="270" r="3.5" fill="green" />
 
 
 	<g id="gleis5_1" class="unpowered">
 		<circle cx="40" cy="270" class="pack" />
-
-		<circle cx="120" cy="255" class="route" /><!-- switch -->
+		<circle cx="100" cy="270" class="manual" />
 		<circle cx="60" cy="270" class="route" />
 		<circle cx="80" cy="270" class="route" />
+		<circle cx="120" cy="255" class="route" /><!-- switch -->
 	</g>
 	<!-- end station -->
 
@@ -327,25 +333,24 @@
 	</g>
 	<g id="gleis6_3" class="unpowered">
 		<circle cx="140" cy="90" class="route" />
-
-		<circle cx="180" cy="30" class="pack" />
-
+		<circle cx="160" cy="90" class="manual" />
 		<circle cx="180" cy="60" class="route" />
+		<circle cx="180" cy="30" class="pack" />
 	</g>	
 	
-	<circle cx="160" cy="90" r="3.5" fill="green" />
+	
 	
 	<!-- end tram -->
 
 	<!-- start reversing loop-->
 	
 	<g id="gleis7_1" class="unpowered">
-		<circle cx="260" cy="30" r="3.5" class="pack" />
-		<circle cx="260" cy="60" class="route" />
-		<circle cx="240" cy="135" class="route" />
+		<circle cx="280" cy="30" r="3.5" class="pack" />
+		<circle cx="280" cy="60" class="route" />
+		<circle cx="280" cy="90" class="manual" />
+		<circle cx="280" cy="120" class="route" />
 		
 	</g>
-	<circle cx="260" cy="90" r="3.5" fill="green" />
 	
 	<!-- Non track holes -->
 	<circle cx="485" cy="30" r="11" class="twtade" />

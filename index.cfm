@@ -90,7 +90,7 @@
 		console.log( "ready!" );
 
 
-		SVG.find("g circle.pack").each(function(item) {
+		SVG.find("#north g circle.pack").each(function(item) {
 
 			item.click(function(item) {
 				id = item.target.parentNode.id.replace('gleis','').replace('_','');
@@ -112,6 +112,7 @@
 
 	<p><a href="South.cfm">South</a> <a href="?mode=both">Both</a></p>
 
+	<h1>North</h1>
 
 
 	<p></p>
@@ -153,6 +154,12 @@
 					<li>101, 102, 2-2, 2-4, 4-1, 5-1 are powered via routing
 				</ul>
 			</li>
+			<li>These then feed into <q>16-Channel  Relay Module.</q> on the floor</li>
+
+			<li>These then feed into <q>DIN Rail Mount Pluggable 12x2 
+				Position 10A / 300V Screw Terminal Block Distribution Module.</q>
+				on the ceiling
+			</li>
 			<li><b>Gleis 1 and gleis 6 switch</b>
 				<ul>
 					<li>2 for direction</li>
@@ -176,6 +183,11 @@
 						</ul>
 					</li>
 				</ul>
+			</li>
+			<li>These then feed into <q>16-Channel  Relay Module.</q> on the floor</li>
+			<li>These then feed into <q>DIN Rail Mount Pluggable 
+				12x2 Position 10A / 300V Screw Terminal Block Distribution Module.</q>
+				on the wall
 			</li>
 		</ul>
 	</div>

@@ -79,7 +79,7 @@
 	<text x="240" y="255" class="heavy">Gleis 5</text>
 	<text x="240" y="285" class="heavy">Gleis 6</text>
 	<text x="240" y="105" class="heavy">Gleis 7</text>
-	<text x="102" y="63" class="heavy">Gleis 8</text>
+	<text x="82" y="63" class="heavy">Gleis 8</text>
 
 	<!-- mini panel -->
 	<!--
@@ -132,10 +132,10 @@
 
 
 	<!-- reversing loop -->
-	<path d="M140,95 a25,25 0 0,1 -25,25" 
+	<path d="M120,95 a25,25 0 0,1 -25,25" 
 		fill="none" stroke="blue" stroke-width="5" />
 
-	<line x1="140" y1="0" x2="140" y2="95" 
+	<line x1="120" y1="0" x2="120" y2="95" 
 		stroke="blue" stroke-width="5" />
 
 	
@@ -200,10 +200,11 @@
 		<circle cx="60" cy="120"  class="route" />
 		<circle cx="80" cy="120"  class="route" />
 		<circle cx="100" cy="120"  class="route" />
-		<circle cx="120" cy="120"  class="route" />
+		
 	</g>
 
 	<g id="gleis1_2" class="unpowered">
+		<circle cx="120" cy="120"  class="route" />
 		<circle cx="140" cy="120" class="manual" />
 		<circle cx="160" cy="120" class="pack" />
 		<circle cx="180" cy="120" class="route" />
@@ -215,8 +216,8 @@
 		<circle cx="200" cy="120" class="route" />
 		<circle cx="220" cy="120" class="manual" />
 		<circle cx="240" cy="120" class="pack" />
-		<circle cx="260" cy="120" class="manual" />
-		<circle cx="280" cy="120" class="route" />
+		<circle cx="260" cy="120" class="route" />
+		<circle cx="280" cy="120" class="manual" />
 		<circle cx="300" cy="120" class="route" />
 		<use x="215" y="100" href="#signal" />
 		<use x="266" y="142" href="#signal180"  />
@@ -370,11 +371,12 @@
 
 	<!-- Turn around-->
 	<g id="gleis8_1" class="unpowered">
-		<circle cx="140" cy="30" class="pack" />
-		<circle cx="140" cy="60" class="route" />
-		<circle cx="140" cy="90" class="manual" />
+		<circle cx="120" cy="30" class="pack" />
+		<circle cx="120" cy="60" class="manual" />
+		<circle cx="120" cy="90" class="route" />
+		
 
-		<use x="120" y="96" href="#signal270" />
+		<use x="100" y="96" href="#signal270" />
 	</g>
 	
 
