@@ -110,7 +110,13 @@
 	});
 </script>
 
-	<p><a href="South.cfm">South</a> <a href="?mode=both">Both</a></p>
+	<p>
+		<a href="South.cfm">South</a>
+		<a href="?mode=both">Both</a>
+	
+		<a href="cabinet.cfm">Cabinet</a>
+	
+	</p>
 
 	<h1>North</h1>
 
