@@ -67,7 +67,7 @@ See fasteners</a>
 	<td id="left2top" align="right">
 		<cfinclude  template="images/side.svg">
 	</td>
-	<td valign="bottom"><cfinclude  template="images/top.svg"></td>
+	<td id="top" valign="bottom"><cfinclude  template="images/front_top.svg"></td>
 	<td id="right2top">
 		<cfinclude  template="images/side.svg">
 	</td>
@@ -84,13 +84,14 @@ See fasteners</a>
 </tr>
 <tr>
 	<td id="left2front"><cfinclude  template="images/side.svg"></td>
-	<td id="front" valign="top" style="padding-top : 36px"><cfinclude  template="images/front.svg"></td>
+	<td id="front" valign="top" style="padding-top : 26px"><cfinclude  template="images/front_top.svg"></td>
 	<td id="right2front"><cfinclude  template="images/side.svg"></td>
 </tr>
 </table>
 
-<cfinclude  template="images/top.svg"><br>
-<cfinclude  template="images/back.svg">
+<p></p>
+<p></p>
+
 
 </body>
 </html>
