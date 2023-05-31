@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="floor"
+   width="426mm"
+   height="276mm"
+   version="1.1"
+   sodipodi:docname="floor v12 with pcb holes forward.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs401" />
+  <sodipodi:namedview
+     id="namedview399"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.85507246"
+     inkscape:cx="702.27966"
+     inkscape:cy="601.70339"
+     inkscape:window-width="1845"
+     inkscape:window-height="1212"
+     inkscape:window-x="-6"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="floor"
+     inkscape:document-units="mm" />
+  <polyline
+     points="  10,10  10,38  13,38  13,78  10,78  10,118  13,118  13,158  10,158  10,198  13,198  13,238  10,238  10,266   33,266  33,263  73, 263  73, 266  113, 266  113, 263  153, 263  153, 266  193, 266  193, 263  233, 263  233, 266  273, 266  273, 263   313, 263  313, 266  353, 266  353, 263  393, 263  393, 266  416, 266  416, 238  413, 238  413, 198  416, 198  416, 158  413, 158  413, 118  416, 118  416, 78  413, 78  413, 38  416, 38  416, 10    393, 10  393, 13  353, 13  353, 10     313, 10  313, 13  273, 13  273, 10   233, 10  233, 13  193, 13  193, 10  153, 10  153, 13  113, 13  113, 10  73, 10  73, 13  33, 13  33, 10  10,10"
+     id="polyline396"
+     transform="scale(3.7795276)" />
+  <circle
+     style="fill:#ffffff;stroke-width:0.461681"
+     id="path407-0-5-5-3-1-7"
+     cx="576.37793"
+     cy="806.92914"
+     r="5.6692915" />
+  <circle
+     style="fill:#ffffff;stroke-width:0.461681"
+     id="path407-0-5-5-3-1"
+     cx="383.62204"
+     cy="806.92914"
+     r="5.6692915" />
+  <circle
+     style="fill:#ffffff;stroke-width:0.461681"
+     id="path407-0-5-5-3"
+     cx="383.62204"
+     cy="927.87402"
+     r="5.6692915" />
+  <circle
+     style="fill:#ffffff;stroke-width:0.461681"
+     id="path407-0-5-5"
+     cx="580.15747"
+     cy="927.87402"
+     r="5.6692915" />
+  <circle
+     style="fill:#ffffff;stroke-width:0.461681"
+     id="path407-0-5-8-0-8"
+     cx="576.37793"
+     cy="504.56693"
+     r="5.6692915" />
+  <circle
+     style="fill:#ffffff;stroke-width:0.461681"
+     id="path407-0-5-8-0"
+     cx="383.62204"
+     cy="504.56693"
+     r="5.6692915" />
+  <circle
+     style="fill:#ffffff;stroke-width:0.461681"
+     id="path407-0-5-8"
+     cx="383.62204"
+     cy="383.62204"
+     r="5.6692915" />
+  <circle
+     style="fill:#ffffff;stroke-width:0.461681"
+     id="path407-0-5"
+     cx="576.37793"
+     cy="383.62204"
+     r="5.6692915" />
+  <circle
+     style="fill:#ffffff;stroke-width:0.461681"
+     id="path407-0-0"
+     cx="708.66144"
+     cy="927.87402"
+     r="5.6692915" />
+  <circle
+     style="fill:#ffffff;stroke-width:0.461681"
+     id="path407-0"
+     cx="708.66144"
+     cy="383.62204"
+     r="5.6692915" />
+  <circle
+     style="fill:#ffffff;stroke-width:0.461681"
+     id="path407-2"
+     cx="1441.8898"
+     cy="927.87402"
+     r="5.6692915" />
+  <circle
+     style="fill:#ffffff;stroke-width:0.461681"
+     id="path407"
+     cx="1441.8898"
+     cy="383.62204"
+     r="5.6692915" />
+</svg>

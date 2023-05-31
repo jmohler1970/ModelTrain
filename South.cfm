@@ -103,11 +103,30 @@
 			["Inner west to return loop", 81, [-12],					11],
 		];
 
+		/*
+		Switches
+		When straight, it stays on its own track. Else diverge
+
+		point1_8
+		point1_7
+		point1_2 (locked pair)
+		point2_6
+		point2_3
+		point2_3 (again)
+		point2_1 (locked pair)
+		point3_2 (pair?)
+		point4_6
+		point5_6
+
+
+
+		*/
+
+
 		SVG.on(document, 'DOMContentLoaded', function() {
 			console.log( "Ready!" );
 
 			resetAll()
-
 
 			SVG.find("g circle.pack").each(function(item) {
 
@@ -153,6 +172,21 @@
 
 	<cfinclude  template="images/SouthModel400x300.svg">
 </div>
+
+	<h4>Buttons</h4>
+	<ul>
+		<li>Yellow once: Activate section</li>
+		<li>Yellow twice: Toggle section</li>
+		<li>Yellow different yellow: Activate path. Change switches</li>
+		<li>Green: Move switch to this position. It will not change power unless auto routed power</li>
+	</ul>
+
+	<h4>LEDs</h4>
+	<ul>
+		<li>On track: Orange means powered</li>
+		<li>On track: Blue means powered in reverse. Gleis 8 can do this</li>
+		<li>Signal: Switch is moved + powered</li>
+	</ul>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>

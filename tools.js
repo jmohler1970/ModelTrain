@@ -69,5 +69,10 @@ function fillPath(Pattern, directedPath, allowToggle = false) {
 				SVG.find('g#gleis' + step).addClass('powered');
 			}
 		} // end if
+
+		// Do we even know the switch positions?
+		if (SVG.find('g#gleis7_1').hasClass("powered") && SVG.find('g#gleis1_2').hasClass("powered")) {
+
+		}
 	} // end for
 }
