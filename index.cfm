@@ -124,7 +124,7 @@
 	<p></p>
 	<p></p>
 
-	<cfinclude template="images/NorthModel400x300.svg">
+	<cfinclude template="images/NorthModel400x300 with panel.svg">
 
 	<cfif url.keyExists("mode")>
 		<br>
