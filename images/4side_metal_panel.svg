@@ -1,201 +1,218 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!-- height :10 + 20 + 50 + 254 + 50 + 200 + 20 + 10 = 664 -->
+<!-- angles :        90   63    27   90    90 -->
+
 <svg
-   id="north"
-   width="426mm"
-   height="270mm"
+   id="wrap"
+   width="420"
+   height="674"
    version="1.1"
-   sodipodi:docname="NorthModel400x300 with panel.svg"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs9287" />
-  <sodipodi:namedview
-     id="namedview9285"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     showgrid="false"
-     inkscape:zoom="3.1431925"
-     inkscape:cx="203.13742"
-     inkscape:cy="194.86557"
-     inkscape:window-width="1845"
-     inkscape:window-height="1212"
-     inkscape:window-x="-6"
-     inkscape:window-y="-6"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="north"
-     inkscape:document-units="mm" />
-  <style>
 
-	</style>
-  <polyline
-     points="
-     13,10
-     13,28
-     10,28
-     10,58
-     13,58
-     13,98
-     10,98
-     10,128
-     13,128
-     13,158
-     10,158
-     10,188
-     13,188
-     13,218
-     10,218
-     10,248
-     13,248
-     13,260
-     413,260
-     413,248
-     416,248
-     416,218
-     413,218
-     413,188
-     416,188
-     416,158
-     413,158
-     413,128
-     416,128
-     416,98
-     413,98
-     413,68
-     416,68
-     416,38
-     413,38
-     413,10
-     13,10
-     "
-     id="polyline8941" />
+   <rect
+     style="fill:#000;stroke-width:1"
+     width="400"
+     height="644"
+     x="10"
+     y="10"
+     rx="4"
+     ry="4"
+     />
 
+   <line x1="10" y1="30" x2="410" y2="30" style="stroke:red;stroke-width:2" />
+   <line x1="10" y1="80" x2="410" y2="80" style="stroke:red;stroke-width:2" />
+   <line x1="10" y1="384" x2="410" y2="384" style="stroke:red;stroke-width:2" />
+   <line x1="10" y1="434" x2="410" y2="434" style="stroke:red;stroke-width:2" />
+   <line x1="10" y1="634" x2="410" y2="634" style="stroke:red;stroke-width:2" />
 
-  <!-- MCP23017 modules-->
-  <!-- top left -->
-  <g>
-  <circle
-     cx="120"
-     cy="22"
-     r="1.6"
-     fill="white"
+   <!-- Corner screw holes-->
+   <g id="cornerscrew">
+     <circle
+          cx="40"
+          cy="20"
+          r="3"
+          fill="white"
+       />
+     <circle
+          cx="390"
+          cy="20"
+          r="3"
+          fill="white"
       />
 
-  <circle
-     cx="120"
-     cy="60"
-     r="1.6"
-     fill="white"
-      />
-
-  <circle
-     cx="133"
-     cy="22"
-     r="1.6"
-     fill="white"
+     <circle
+          cx="40"
+          cy="644"
+          r="3"
+          fill="white"
+       />
+     <circle
+          cx="390"
+          cy="644"
+          r="3"
+          fill="white"
       /> 
+   </g>
 
-  <circle
-     cx="133"
-     cy="60"
-     r="1.6"
-     fill="white"
-      />
+
+   <!-- Panel -->
+   <g transform="translate(0,380) scale(1,-1)">  
+   <!-- MCP23017 modules-->
+     <g id="arduinoboard">
+       <circle
+          cx="30"
+          cy="285"
+          r="1.6"
+          fill="gray"
+       />
+       <circle
+          cx="154"
+          cy="285"
+          r="1.6"
+          fill="gray"
+       />
+       <circle
+          cx="30"
+          cy="191"
+          r="1.6"
+          fill="gray"
+       />
+       <circle
+          cx="154"
+          cy="191"
+          r="1.6"
+          fill="gray"
+       />
+     </g>
+
+  <!-- Thinking: These are for small daughter boards, they don't need 4 screws-->
+
+  <g id="topleft">
+     <!--
+     <circle
+          cx="120"
+          cy="22"
+          r="1.6"
+          fill="white"
+          />
+
+       <circle
+          cx="120"
+          cy="60"
+          r="1.6"
+          fill="white"
+          />
+       -->
+       <circle
+          cx="133"
+          cy="22"
+          r="1.6"
+          fill="white"
+          />
+
+       <circle
+          cx="133"
+          cy="60"
+          r="1.6"
+          fill="white"
+          />
+       
   </g>
 
-    <!-- top center -->
+  <!-- top center -->
   <g>
-  <circle
-     cx="240"
-     cy="22"
-     r="1.6"
-     fill="white"
-      />
+     <circle
+          cx="240"
+          cy="22"
+          r="1.6"
+          fill="white"
+          />
 
-  <circle
-     cx="240"
-     cy="60"
-     r="1.6"
-     fill="white"
-      />
+     <circle
+          cx="240"
+          cy="60"
+          r="1.6"
+          fill="white"
+          />
+     <!--
+     <circle
+          cx="253"
+          cy="22"
+          r="1.6"
+          fill="white"
+          />
 
-  <circle
-     cx="253"
-     cy="22"
-     r="1.6"
-     fill="white"
-      /> 
-
-  <circle
-     cx="253"
-     cy="60"
-     r="1.6"
-     fill="white"
-      />
+     <circle
+          cx="253"
+          cy="60"
+          r="1.6"
+          fill="white"
+          />
+      -->
   </g>
-
 
 
   <!-- top right -->
   <g>
-  <circle
-     cx="320"
-     cy="22"
-     r="1.6"
-     fill="white"
-      />
+     <!--
+     <circle
+          cx="320"
+          cy="22"
+          r="1.6"
+          fill="white"
+          />
 
-  <circle
-     cx="320"
-     cy="60"
-     r="1.6"
-     fill="white"
-      />
+     <circle
+          cx="320"
+          cy="60"
+          r="1.6"
+          fill="white"
+          />
 
-  <circle
-     cx="333"
-     cy="22"
-     r="1.6"
-     fill="white"
-      /> 
+     -->
+     <circle
+          cx="333"
+          cy="22"
+          r="1.6"
+          fill="white"
+          /> 
 
-  <circle
-     cx="333"
-     cy="60"
-     r="1.6"
-     fill="white"
-      />
+     <circle
+          cx="333"
+          cy="60"
+          r="1.6"
+          fill="white"
+          />
+        
   </g>
 
   <!-- bottom center -->
   <g>
-  <circle
-     cx="180"
-     cy="180"
-     r="1.6"
-     fill="white"
-      />
+     <circle
+          cx="180"
+          cy="180"
+          r="1.6"
+          fill="white"
+          />
+     <circle
+          cx="180"
+          cy="218"
+          r="1.6"
+          fill="white"
+          />
 
-  <circle
-     cx="193"
-     cy="180"
-     r="1.6"
-     fill="white"
-      />
-
-  <circle
-     cx="180"
-     cy="218"
-     r="1.6"
-     fill="white"
-      />
+     <!--
+     <circle
+          cx="193"
+          cy="180"
+          r="1.6"
+          fill="white"
+          />
 
    <circle
      cx="193"
@@ -203,27 +220,29 @@
      r="1.6"
      fill="white"
       />
+      -->
   </g>
 
   <!-- bottom right -->
   <g>
-  <circle
-     cx="290"
-     cy="180"
-     r="1.6"
-     fill="white"
-      />
+     <circle
+          cx="290"
+          cy="180"
+          r="1.6"
+          fill="white"
+          />
 
+     <circle
+          cx="290"
+          cy="218"
+          r="1.6"
+          fill="white"
+          />
+
+     <!--
   <circle
      cx="303"
      cy="180"
-     r="1.6"
-     fill="white"
-      />
-
-  <circle
-     cx="290"
-     cy="218"
      r="1.6"
      fill="white"
       />
@@ -234,6 +253,7 @@
      r="1.6"
      fill="white"
       />
+      -->
   </g>
 
   <!-- Cutover switches -->
@@ -304,15 +324,28 @@
      id="circle8961" />
   </g>
 
-  <polyline
-     points="
-        70,30
-        70,62.5
-        102.5,62.5
-        102.5,30
-        70,30"
-     fill="#ffffff"
-     id="polyline8963" />
+  <!-- https://learn.adafruit.com/adafruit-led-backpack/downloads -->
+  <g id="bicolor">
+     <rect
+          x="69.9"
+          y="29.9"
+          fill="pink"
+          width="33.2"
+          height="33.2"
+          />
+     <circle
+          cx="72"
+          cy="27.5"
+          r="1"
+          fill="pink"
+          />
+     <circle
+          cx="101"
+          cy="65.5"
+          r="1"
+          fill="pink"
+          />
+  </g>
 
   <g>
   <circle
@@ -786,17 +819,17 @@
     <circle
        cx="170"
        cy="160"
-              fill="orange"
+       fill="orange"
        r="3" />
     <circle
        cx="190"
        cy="160"
-              fill="orange"
+       fill="orange"
        r="3" />
     <circle
        cx="210"
        cy="160"
-              fill="orange"
+       fill="orange"
        r="3" />
     <circle
        cx="230"
@@ -806,7 +839,7 @@
     <circle
        cx="250"
        cy="160"
-              fill="orange"
+       fill="orange"
        r="3" />
     <circle
        cx="270"
@@ -1038,6 +1071,220 @@
        r="3"
        fill="#ff0000"
        id="circle9269" />
+    </g>
   </g>
+  <!-- end panel as a whole --> 
+  <!-- ***************************** -->   
 
-</svg>
+   <!-- Back -->
+   <g transform="translate(-5,425)">
+     <g id="DIN_mounting">
+       <circle
+         fill="gray"
+         id="path1034-4-9"
+         cx="107.5"
+         cy="122.5"
+         r="2.5" />
+       <circle
+          fill="gray"
+          id="path1034-4-4"
+          cx="107.5"
+          cy="82.5"
+          r="2.5" />
+       <circle
+          fill="gray"
+          id="path1034-4-6"
+          cx="72.5"
+          cy="122.5"
+          r="2.5" />
+       <circle
+          fill="gray"
+          id="path1034-6"
+          cx="32.5"
+          cy="122.5"
+          r="2.5" />
+       <circle
+          fill="gray"
+          id="path1034-4"
+          cx="72.5"
+          cy="82.5"
+          r="2.5" />
+       <circle
+          fill="gray"
+          id="path1034"
+          cx="32.5"
+          cy="82.5"
+          r="2.5" />
+       </g>
+
+
+     <g id="RelayMounts">
+
+     <!-- All boards are 74 wide by 172 on older more expensive boards-->
+       <circle
+          fill="blue"
+          id="path516-3-85-8"
+          cx="174.5"
+          cy="193.5"
+          r="1.5" />
+       <circle
+          fill="blue"
+          id="path516-3-85-3"
+          cx="174.5"
+          cy="21.5"
+          r="1.5" />
+
+       <circle
+          fill="blue"
+          id="path516-3-85-4"
+          cx="248.5"
+          cy="193.5"
+          r="1.5" />
+       <circle
+          fill="blue"
+          id="path516-3-85"
+          cx="248.5"
+          cy="21.5"
+          r="1.5" />
+
+
+       <circle
+          fill="blue"
+          id="path516-9"
+          cx="384.5"
+          cy="193.5"
+          r="1.5" />
+
+       <circle
+          fill="blue"
+          id="path516"
+          cx="384.5"
+          cy="21.5"
+          r="1.5" />
+       <circle
+          fill="blue"
+          id="path516-3-8"
+          cx="310.5"
+          cy="193.5"
+          r="1.5" />
+       <circle
+          fill="blue"
+          id="path516-3"
+          cx="310.5"
+          cy="21.5"
+          r="1.5" />
+
+     </g> 
+
+     <g id="ACplug">
+       <circle
+          fill="orange"
+          id="path516-3-8-9-7-8-1-1-3"
+          cx="26.75"
+          cy="191.75"
+          r="1.75" />
+       <circle
+          fill="orange"
+          id="path516-3-8-9-7-8-1-1"
+          cx="66.75"
+          cy="191.75"
+          r="1.75" />
+       <rect
+          fill="orange"
+          id="rect988"
+          width="27.3"
+          height="19.3"
+          x="33"
+          y="182"
+          ry="3.67" />
+     </g>
+ 
+     <g id="groundposts">
+       <circle
+          fill="yellow"
+          id="path516-3-8-9-74-1-7-2"
+          cx="122.5"
+          cy="136.5"
+          r="1.5" />
+       <circle
+          fill="yellow"
+          id="path516-3-8-9-74-1-7"
+          cx="154.5"
+          cy="136.5"
+          r="1.5" />
+       <circle
+          fill="yellow"
+          id="path516-3-8-9-7-8"
+          cx="154.5"
+          cy="187.5"
+          r="1.5" />
+       <circle
+          fill="yellow"
+          id="path516-3-8-9-74-1"
+          cx="258.5"
+          cy="136.5"
+          r="1.5" />
+       <circle
+          fill="yellow"
+          id="path516-3-8-9-74"
+          cx="290.5"
+          cy="136.5"
+          r="1.5" />
+       <circle
+          fill="yellow"
+          id="path516-3-8-9-7"
+          cx="258.5"
+          cy="187.5"
+          r="1.5" />
+       <circle
+          fill="yellow"
+          id="path516-3-8-9"
+          cx="290.5"
+          cy="187.5"
+          r="1.5" />
+         <circle
+          fill="yellow"
+          cx="122.5"
+          cy="187.5"
+          r="1.5" />
+     </g>
+
+     <g id="slots">
+       <rect
+          fill="pink"
+          id="rect763-3-0"
+          width="10"
+          height="110"
+          x="135"
+          y="25"
+          ry="5.5" />
+       <rect
+          fill="pink"
+          id="rect763-3"
+          width="10"
+          height="110"
+          x="270"
+          y="25"
+          ry="5.5" />
+
+       <rect
+          fill="pink"
+          id="rect763"
+          width="10"
+          height="110"
+          x="393"
+          y="25"
+          ry="5.5" />
+     </g>
+
+
+
+
+
+
+  <!-- power plug -->   
+
+   </g>
+   <!-- end back -->
+
+</svg

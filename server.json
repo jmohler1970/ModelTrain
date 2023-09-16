@@ -1,3 +1,6 @@
 {
-    "name":"modeltrain"
+    "name":"modeltrain",
+    "app":{
+        "cfengine":"adobe@2023"
+    }
 }

@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- height :10 + 20 + 50 + 254 + 50 + 200 + 20 + 10 = 664 -->
+
+<!-- angles :        90   63    27   90    90 -->
+
+<svg
+   id="wrap"
+   width="220"
+   height="410"
+   version="1.1"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="mini_panel.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+
+  <sodipodi:namedview
+     id="namedview380"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.3563218"
+     inkscape:cx="112.43644"
+     inkscape:cy="87.368644"
+     inkscape:window-width="1845"
+     inkscape:window-height="1212"
+     inkscape:window-x="-6"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="wrap"
+     inkscape:document-units="mm" />
+
+  <!-- Inkscape cannot convert -->
+  <defs>
+
+
+
+
+    <rect
+      id="boardoutline"
+      stroke="white"
+      x="-3"
+      y="-3"
+      width="150"
+      height="100"
+      stroke-dasharray="1 2"
+     />
+
+    <rect
+       id="arduino"
+       stroke="white"
+       width="45"
+       height="19"
+       stroke-dasharray="1 2"
+     />
+
+    <rect
+     id="packoutline"
+     stroke="orange"
+     width="92"
+     height="51"
+     stroke-dasharray="1 2"
+     />
+
+    <rect
+     id="rotaryoutline"
+     stroke="white"
+     width="25"
+     height="25"
+     stroke-dasharray="1 2"
+     />
+
+  </defs>
+
+  <desc>
+     We are expecting 5052 H21 Aluminum @ .080" (2.0 MM)
+     Revised bends.
+     AC Plug
+  </desc>
+
+  <g
+     id="outline"
+     transform="translate(10,30)">
+  <path d="
+     M24,0
+
+     h160
+
+     a2,2 0 0 1 2,2
+     v3
+     a2,2 0 0 0 2,2
+     a2,2 0 0 0 2,-2
+     v-13
+     a5,5 0 0 1 5,-5
+     a5,5 0 0 1 5,5
+
+     v375
+
+     a5,5 0 0 1 -5,5
+     a5,5 0 0 1 -5,-5
+     v-13
+     a2,2 0 0 0 -2,-2
+     a2,2 0 0 0 -2,2
+     v3
+     a2,2 0 0 1 -2,2
+
+     h-168 
+
+     a2,2 0 0 1 -2,-2
+     v-3
+     a2,2 0 0 0 -2,-2
+     a2,2 0 0 0 -2,2
+     v13
+     a5,5 0 0 1 -5,5
+     a5,5 0 0 1 -5,-5
+
+     v-375
+
+     a5,5 0 0 1 5,-5
+     a5,5 0 0 1 5,5
+     v13
+     a2,2 0 0 0 2,2
+     a2,2 0 0 0 2,-2
+     v-3
+     a2,2 0 0 1 2,-2
+
+     z" 
+     fill="black" 
+     />
+
+    <circle
+     cx="5"
+     cy="-7"
+     r="2.1"
+     fill="lightgray"
+    />
+
+    <circle
+     cx="195"
+     cy="-7"
+     r="2.1"
+     fill="lightgray"
+    />
+
+    <line y1="3" x2="10" y2="3" stroke="orange">
+      <desc>For left tab. 2 mm in for material thickness</desc>
+    </line>
+     
+    <line x1="190" y1="3" x2="200" y2="3" stroke="orange">
+      <desc>For left tab. 2 mm in for material thickness</desc>
+    </line>
+
+    <line  y1="60" x2="200" y2="60" stroke="orange">
+      <desc>This is the most important. line Fold between back and top</desc>
+    </line>
+
+    <circle
+      cx="5"
+      cy="70"
+      r="2.1"
+      fill="lightgray"
+    />
+    <circle
+      cx="195"
+      cy="70"
+      r="2.1"
+      fill="lightgray"
+    />
+
+    <circle
+      cx="5"
+      cy="290"
+      r="2.1"
+      fill="lightgray"
+    />
+    <circle
+      cx="195"
+      cy="290"
+      r="2.1"
+      fill="lightgray"
+    />
+
+    <line y1="300" x2="200" y2="300" stroke="orange">
+      <desc>Fold between top and front. A 57mm distance</desc>
+    </line>
+
+    <line y1="356" x2="10" y2="356" stroke="orange">
+      <desc>For left tab. 2 mm in for material thickness</desc>
+    </line>
+     
+    <line x1="190" y1="356" x2="200" y2="356" stroke="orange">
+      <desc>For left tab. 2 mm in for material thickness</desc>
+    </line>
+
+    <circle
+      cx="5"
+      cy="366"
+      r="2.1"
+      fill="lightgray"
+    />
+    <circle
+      cx="195"
+      cy="366"
+      r="2.1"
+      fill="lightgray"
+    />
+  </g>
+
+  <g 
+   id="ACplug"
+   transform="translate(190,45),rotate(90)">
+    <desc>Power pack mounting screws too</desc>
+    <circle
+      fill="orange"
+      cx="-6.25"
+      cy="9.75"
+      r="1.75"
+      />
+    <rect
+      fill="orange"
+      width="27.3"
+      height="19.3"
+      ry="3.67"
+      />
+    <circle
+      fill="orange"
+      cx="33.75"
+      cy="9.75"
+      r="1.75"
+      />
+  </g>
+  <g 
+   id="powerpack"
+   transform="translate(100,118)">
+    <!-- https://www.meanwell-web.com/content/files/pdfs/productPdfs/MW/Rs-25/RS-25-spec.pdf -->
+
+    <use href="#packoutline" />
+
+    <rect
+      x="17"
+      y="23.5" 
+      fill="orange"
+      width="6"
+      height="3.6"
+      rx="1.8"
+      ry="1.8"
+      />
+
+    <circle
+      fill="orange"
+      cx="75"
+      cy="25.5"
+      r="1.75"
+    />
+
+   </g>
+
+
+  <!-- Board screw holes-->
+  <g
+    id="boardscrew"
+    transform="translate(55,215)">
+
+
+    <use href="#boardoutline" 
+    />
+
+    <use href="#arduino"
+       x="95"
+       y="40"
+       />
+
+   <use href="#arduino"
+     x="5"
+     />
+
+     <use href="#arduino"
+       x="5"
+       y="35"
+       />
+
+     <use href="#arduino"
+       x="5"
+       y="70"
+       />
+
+
+
+
+    <circle
+       cx="0"
+       cy="0"
+       r="1.5"
+       fill="white"
+    />
+    <circle
+       cx="144"
+       cy="0"
+       r="1.5"
+       fill="white"
+    />
+    <circle
+       cx="0"
+       cy="94"
+       r="1.5"
+       fill="white"
+     />
+    <circle
+       cx="144"
+       cy="94"
+       r="1.5"
+       fill="white"
+       id="circle343" />
+  </g>
+  <!-- Mounting Size: 26 x 21.5mm -->
+  <g
+    id="powerrocker"
+    transform="translate(25,205)"
+    >
+
+    <rect
+      x="-50" y="-30" transform="rotate(90)"
+       width="21.5"
+       height="29"
+       fill="white"
+    />
+
+    <rect
+       width="21.5"
+       height="29"
+       fill="white"
+    />
+    <rect
+      y="50"
+       width="21.5"
+       height="29"
+       fill="white"
+    />
+
+  </g>
+  <!-- https://learn.adafruit.com/adafruit-led-backpack/downloads -->
+  <g
+     id="bicolor"
+     transform="translate(65,205)">
+    <rect
+       fill="pink"
+       width="32"
+       height="32"
+        />
+    <!-- up and down is supposed to be less than 37. I don't like adafruit specs -->
+    <circle
+       cx="2"
+       cy="-2.3"
+       r="1.1"
+       fill="pink"
+       id="circle355" />
+    <circle
+       cx="30"
+       cy="-2.3"
+       r="1.1"
+       fill="pink"
+    />
+    <circle
+       cx="30"
+       cy="34.5"
+       r="1.1"
+       fill="pink"
+    />
+    <circle
+       cx="2"
+       cy="34.5"
+       r="1.1"
+       fill="pink"
+    />
+  </g>
+  <!-- https://cdn-shop.adafruit.com/datasheets/pec11.pdf -->
+  <g
+     id="buttons"
+     transform="translate(120,185)"
+     >
+    <circle
+       r="6.1"
+       fill="yellow"
+       />
+    <!-- This is a separator so that it is obvious which switch controls which section -->
+    <rect
+       x="-6"
+       y="14"
+       fill="gray"
+       width="42"
+       height="2"
+       rx="1"
+       ry="1"
+       />
+
+    <use href="#rotaryoutline"
+    x="48"
+    y="-12"
+    />
+
+    <circle
+      cx="60"
+      cy="0"
+      r="3.5"
+      fill="white"
+      >
+      <desc>Rotary Encoder</desc>
+    </circle>
+
+     <use href="#arduino"
+       transform="rotate(73)"
+       x="43"
+       y="-52"
+     />
+
+
+    <circle
+      cx="60"
+      cy="30"
+      r="1.8"
+      fill="white"
+      >
+     <desc>MCP23017 mouted diagonally</desc> 
+    </circle>
+
+    <circle
+      cx="60"
+      cy="70"
+      r="1.8"
+      fill="white"
+      >
+     <desc>MCP23017 mouted diagonally</desc> 
+    </circle>
+
+
+    <circle
+       cy="30"
+       r="6.1"
+       fill="white"
+       />
+    <!-- another separator -->
+    <rect
+       x="-6"
+       y="44"
+       fill="gray"
+       width="42"
+       height="2"
+       rx="1"
+       ry="1"
+       />
+    <circle
+       cx="30"
+       cy="30"
+       r="6.1"
+       fill="white"
+       />
+    <circle
+       cy="60"
+       r="6.1"
+       fill="white"
+       />
+    <circle
+       cx="30"
+       cy="60"
+       r="6.1"
+       fill="white"
+       />
+    <circle
+       cy="120"
+       r="6.1"
+       fill="blue"
+       />
+
+
+    <circle
+       cx="30"
+       cy="90"
+       r="6.1"
+       fill="green"
+       />
+    <circle
+       cy="90"
+       r="6.1"
+       fill="green"
+       />
+    <rect
+       x="44"
+       y="84"
+       fill="gray"
+       width="2"
+       height="42"
+       rx="1"
+       ry="1"
+       >
+       <desc>Vertical divider</desc>
+     </rect>
+    <circle
+       cx="60"
+       cy="120"
+       r="6.1"
+       fill="red"
+       />
+    <circle
+       cx="60"
+       cy="90"
+       r="6.1"
+       fill="red"
+       />
+    <path 
+      transform="translate(57,129), scale(0.05)"
+      d="
+         M109.48 16.34H84.84c-1.28 0-2.33 1.04-2.33 2.33v36.27H45.5V18.68c0-1.29-1.04-2.33-2.34-2.33H18.53a2.34 2.34 0 0 0-2.34 2.33v99.96c0 1.29 1.05 2.33 2.34 2.33h24.63a2.34 2.34 0 0 0 2.34-2.33V76.15h37.02v42.48c0 1.29 1.05 2.33 2.33 2.33h24.64c1.29 0 2.33-1.05 2.33-2.33V18.68a2.35 2.35 0 0 0-2.34-2.34z"
+      fill="red">
+    </path>
+  </g>
+
+  <!-- https://www.amazon.com/dp/B084DJTNBR?ref=ppx_yo2ov_dt_b_product_details&th=1 -->
+  <g id="terminal" transform="translate(20,75)">
+    <circle
+       cy="4"
+       r="2.1"
+       fill="gray"
+       />
+    <!-- I think it is 8, but want a little room -->
+    <rect
+      x="5"
+      fill="gray"
+      width="123.5"
+      height="8.2"
+      rx="4.1"
+      ry="4.1"
+      />
+    <!-- Or maybe 133-->
+    <circle
+       cx="133.5"
+       cy="4"
+       r="2.1"
+       fill="gray"
+       />
+
+    <rect
+      x="5"
+      y="-35"
+      fill="gray"
+      width="50"
+      height="25"
+      rx="5"
+      ry="5"
+      />
+  </g>
+</svg>

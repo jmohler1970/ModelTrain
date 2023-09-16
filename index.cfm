@@ -1,3 +1,7 @@
+<cfscript>
+	param url.mode = "";
+</cfscript>
+
 <!doctype html>
 <html>
 <head>
@@ -9,13 +13,23 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 	<script src="tools.js"></script>
 
-	<cfif url.keyExists("mode")>
+	<cfswitch expression="#url.mode#"> 
+	<cfcase value="both">
 		<style>
 			svg#north {
 				transform: rotate(180deg);
 			}
 		</style>
-	</cfif>
+	</cfcase>
+	<cfcase value="reverse">
+		<style>
+			svg#south {
+				transform: rotate(180deg);
+			}
+		</style>
+	</cfcase>
+	</cfswitch>
+
 </head>
 <body>
 	<script>
@@ -112,24 +126,128 @@
 
 	<p>
 		<a href="South.cfm">South</a>
-		<a href="?mode=both">Both</a>
-	
+		<a href="index.cfm">North</a>
+		<cfif url.mode EQ "both">
+			Both
+		<cfelse>
+			<a href="?mode=both">Both</a>
+		</cfif>
+		<cfif url.mode EQ "reverse">
+			Upsidedown
+		<cfelse>
+			<a href="?mode=reverse">Upside down</a>
+		</cfif>
 		<a href="cabinet.cfm">Cabinet</a>
-	
 	</p>
 
-	<h1>North</h1>
+	
 
 
 	<p></p>
 	<p></p>
 
-	<cfinclude template="images/NorthModel400x300 with panel.svg">
+	<cfswitch expression="#url.mode#">
+	<cfcase value="both">
+		<cfinclude template="images/NorthModel_autopower.svg">
+		<br />
+		<cfinclude template="images/SouthModel_autopower.svg">
+	</cfcase>
+	<cfcase value="reverse">
+		<cfinclude template="images/SouthModel_autopower.svg">
+		<br />
+		<cfinclude template="images/NorthModel_autopower.svg">
+	</cfcase>
+	<cfdefaultcase>
+		<h1>North</h1>
+		<cfinclude template="images/NorthModel_autopower.svg">
+	</cfdefaultcase>
+	</cfswitch>
 
-	<cfif url.keyExists("mode")>
-		<br>
-		<cfinclude template="images/SouthModel400x300.svg">
-	</cfif>
+<h3>Controls and signals</h3>
+<h4>Rocker switches</h4>
+<ul>
+	<li>Support North, South, and two person operation</li>
+	<li>Allow turn around loop to work</li>
+	<li>Can disable but not prefered</li>
+</ul>
+
+<h4>Matrix LED</h4>
+<ul>
+	<li>Graphical representation of track</li>
+	<li>Shows powered sections<li>
+	<li>Shows track switch positions: straight and diverge</li>
+</ul>
+
+<h4>Push buttons</h4>
+<ul>
+	<li>Alter powered sections and is prefered approach for this.<li>
+	<li>Alter track switches</li>
+	<li>My cycle through 3 options</li>
+	<li>My cycle through 1 option</li>
+</ul>
+
+<h4>Track signals</h4>
+<h5>Default</h5>
+<ul>
+	<li>RED: No power</li>
+	<li>RED: Reverse power</li>
+	<li>RED: Very recent train passed threw</li>
+	<li>YELLOW: Recent train passed threw</li>
+	<li>GREEN: Powered, correct direction, no recent trains.</li>
+</ul>
+
+<h4>Relay mapping (v2)</h4>
+<ol>
+	<li>Switch direct enable</li>
+	<li>Switch diverge enable</li>
+	<li>Switch</li>
+	<li>Switch</li>
+	<li>Switch</li>
+	<li>Switch</li>
+	<li>Switch</li>
+	<li>Switch</li>
+	<li><hr /></li>
+	<li>Blank</li>
+	<li>Blank</li>
+	<li>Switch</li>
+	<li>Switch</li>
+	<li>Switch</li>
+	<li>Switch</li>
+	<li>Switch</li>
+	<li>Switch</li>
+</ol>
+
+<ol>
+	<li>Power - Orange</li>
+	<li>Power 1 left</li>
+	<li>Power 1 center</li>
+	<li>Power 2 left</li>
+	<li>Power 2 center</li>
+	<li>Power - Green</li>
+	<li>Power - Green</li>
+	<li>Power - Blue</li>
+</ol>
+
+<p>In summary</p>
+<ul>
+	<li>2 for switch direction</li>
+	<li>12 switches</li>
+	<li>8 power sections</li>
+</li>
+
+<h4>5 section layout</h4>
+<ol>
+	<li><b>East:</b> 1050mm &times; 900mm = <span style="color : red">0.945&sup2;</span></li>
+	<li><b>North:</b> <span style="color : red">1500mm</span> &times; 450mm = 0.675m&sup2;</li>
+	<li><b>West:</b> 900mm &times; 900mm = 0.81&sup2;</li>
+	<li><b>Central:</b> 1200mm &times; 750mm = 0.9&sup2;</li>
+	<li><b>South:</b> <span style="color : red">1500mm</span> &times 300mm  0.45&sup2;</li>
+</ol>
+
+<p>Note: East is locked</p>
+
+<hr>
+<p>Obsolete</p>
 
 		<h3>Control levels</h3>
 		<p>Inspiration: <a href="https://www.youtube.com/watch?v=jD2zFtpBCAw">Modelleisenbahn Club Flawil</a></p>

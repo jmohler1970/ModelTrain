@@ -1,0 +1,198 @@
+<svg id="north" width="400" height="300">
+	<style>
+
+	g.powered circle.route {
+		fill: #fb0 !important
+	}
+	
+	g.unpowered circle.route {
+		fill: #555;
+		r : 3.5px;
+	}
+
+	/* As in power pack*/
+	circle.pack {
+		fill: yellow;
+		r : 5px;
+	}
+
+	.heavy {
+		font: bold 12px sans-serif;
+	}
+	</style>
+
+	<defs>
+		<g id="signal" transform="scale(0.7)">
+			<polygon points="0,12 12,12 
+				12,7 15,7 15,5 12,5 
+				12,0 4,0 0,4" />
+			<circle cx="6" cy="6" r="3.5" fill="red" />
+		</g>
+	</defs>
+
+
+	<!-- mini panel -->
+	<text x="160" y="180" class="heavy">2. Central Station</text>
+
+
+	<polyline points="
+		304 160 304 73 263 73 263 1 79 1" 
+		stroke="pink" 
+		stroke-width="1"
+		fill="none"
+		stroke-dasharray="1"
+		stroke-linejoin="round"/>
+	
+
+	<!-- Station sidings -->
+	<!-- Track 4 -->
+	<line x1="20" y1="160" x2="130" y2="160" 
+		stroke="dodgerblue" stroke-width="5" />
+
+
+	<polyline points="
+		20 180 110 180 139 151" 
+		stroke="dodgerblue" 
+		stroke-width="5"
+		fill="none"
+		stroke-linejoin="round"
+		/>
+	
+
+	<line x1="141" y1="149" x2="150" y2="140" 
+		stroke="dodgerblue" stroke-width="5" />
+
+
+	<!-- bumpers -->
+	<line x1="20" y1="155" x2="20" y2="165" 
+		stroke="dodgerblue" stroke-width="3" />
+
+	<line x1="20" y1="175" x2="20" y2="185" 
+		stroke="dodgerblue" stroke-width="3" />
+
+
+	<!-- Track 3 -->
+	<line x1="70" y1="120" x2="79" y2="129" 
+		stroke="green" stroke-width="5" />
+
+	<polyline points="
+		81 131 90 140 298 140 306 131" 
+		stroke="green" 
+		stroke-width="5"
+		fill="none"
+		stroke-linejoin="round"/>
+
+	<line x1="315" y1="120" x2="307" y2="129" 
+		stroke="green" stroke-width="5" />
+
+	<use x="-170" y="-152" href="#signal" transform="rotate(180)" />
+
+
+	<!-- end station -->
+
+	<!-- tramway -->
+	<line x1="120" y1="60" x2="220" y2="60" 
+		stroke="orange" stroke-width="5" />
+
+	<path d="M240,40 a20,20 0 0,1 -20,20" 
+		fill="none" stroke="orange" stroke-width="5" />	
+
+	<use x="-205" y="-72" href="#signal" transform="rotate(180)" />
+
+	<line x1="240" y1="0" x2="240" y2="40" 
+		stroke="orange" stroke-width="5" />
+
+	<line x1="120" y1="55" x2="120" y2="65" 
+		stroke="orange" stroke-width="3" />
+
+
+	<line x1="170" y1="60" x2="190" y2="80" 
+		stroke="orange" stroke-width="5" />
+
+
+	<line x1="192" y1="82" x2="210" y2="100" 
+		stroke="dimgray" stroke-width="5" />
+
+
+	<!-- reversing loop -->
+	<path d="M280,75 a25,25 0 0,1 -25,25" 
+		fill="none" stroke="dimgray" stroke-width="5" />
+
+	<line x1="280" y1="0" x2="280" y2="71" 
+		stroke="orange" stroke-width="5" />
+
+	<use x="5" y="-292" href="#signal" transform="rotate(90)" />
+
+
+	<!-- Inner to outer cross overs -->
+	<line x1="70" y1="100" x2="79" y2="109" 
+		stroke="dimgray"
+		style="stroke-width:5;" />
+
+	<line x1="81" y1="111" x2="90" y2="120" 
+		stroke="dimgray"
+		style="stroke-width:5;" />	
+
+
+	<line x1="315" y1="100" x2="306" y2="109" 
+		stroke="dimgray"
+		style="stroke-width:5;" />
+	
+	<line x1="304" y1="111" x2="295" y2="120" 
+		stroke="dimgray"
+		style="stroke-width:5;" />
+
+
+	<!-- Track 1/ inner -->
+	<use x="62" y="86" href="#signal" />
+	
+
+	<line x1="40" y1="0" x2="40" y2="80"
+		stroke="black" stroke-width="10" />
+
+	<path d="M65,100 a25,25 0 0,1 -25,-25" 
+		fill="none" stroke="black" stroke-width="10" />	
+
+	<line x1="64" y1="100" x2="80" y2="100" 
+		stroke="black" stroke-width="10" />
+	<line x1="82" y1="100" x2="302" y2="100" 
+		stroke="black" stroke-width="10" />
+	<line x1="306" y1="100" x2="335" y2="100" 
+		stroke="black" stroke-width="10" />
+	
+
+	<path d="M360,75 a25,25 0 0,1 -25,25" 
+		fill="none" stroke="black" stroke-width="10" />	
+
+	<line x1="360" y1="0" x2="360" y2="80" 
+		stroke="black" stroke-width="10" />
+
+	<use x="-330" y="-114" href="#signal" transform="rotate(180)" />
+
+
+	<!-- Track 2/outer main line -->
+	<use x="62" y="106" href="#signal" />
+
+	<line x1="20" y1="0" x2="20" y2="100" 
+		stroke="black" stroke-width="10" />
+
+	<path d="M45,120 a25,25 0 0,1 -25,-25" 
+		fill="none" stroke="black" stroke-width="10" />	
+
+	<line x1="45" y1="120" x2="80" y2="120" 
+		stroke="black" stroke-width="10" />
+	<line x1="82" y1="120" x2="302" y2="120" 
+		stroke="black" stroke-width="10" />
+	<line x1="306" y1="120" x2="355" y2="120" 
+		stroke="black" stroke-width="10" />
+	<use x="222" y="86" href="#signal" />
+
+	<path d="M380,95 a25,25 0 0,1 -25,25" 
+		fill="none" stroke="black" stroke-width="10" />	
+
+	<line x1="380" y1="0" x2="380" y2="95" 
+		stroke="black" stroke-width="10" />
+
+	<use x="-330" y="-135" href="#signal" transform="rotate(180)" />
+
+</svg>

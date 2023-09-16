@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- height :10 + 20 + 50 + 254 + 50 + 200 + 20 + 10 = 664 -->
+
+<!-- angles :        90   63    27   90    90 -->
+
+<svg
+   id="wrap"
+   width="230"
+   height="220"
+   version="1.1"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="mini_panel.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs382" />
+  <sodipodi:namedview
+     id="namedview380"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.3563218"
+     inkscape:cx="112.43644"
+     inkscape:cy="87.368644"
+     inkscape:window-width="1845"
+     inkscape:window-height="1212"
+     inkscape:window-x="-6"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="wrap"
+     inkscape:document-units="mm" />
+  <rect
+     style="fill:#000000;stroke-width:3.77953"
+     width="210"
+     height="200"
+     x="10"
+     y="10"
+     rx="5"
+     ry="5"
+     id="20" />
+  <!-- Corner screw holes-->
+  <g
+     id="cornerscrew"
+     transform="translate(20,20)">
+    <circle
+       r="3"
+       fill="white"
+       id="circle328" />
+    <circle
+       cx="190"
+       r="3"
+       fill="white"
+       id="circle330" />
+    <circle
+       cy="180"
+       r="3"
+       fill="white"
+       id="circle332" />
+    <circle
+       cx="190"
+       cy="180"
+       r="3"
+       fill="white"
+       id="circle334" />
+  </g>
+  <!-- Board screw holes-->
+  <g
+     id="boardscrew"
+     transform="translate(60,90)">
+    <circle
+       cx="0"
+       cy="0"
+       r="1.5"
+       fill="white"
+       id="circle337" />
+    <circle
+       cx="144"
+       cy="0"
+       r="1.5"
+       fill="#ffffff"
+       id="circle339" />
+    <circle
+       cx="0"
+       cy="94"
+       r="1.5"
+       fill="white"
+       id="circle341" />
+    <circle
+       cx="144"
+       cy="94"
+       r="1.5"
+       fill="white"
+       id="circle343" />
+  </g>
+  <!-- Mounting Size: 26 x 21.5mm -->
+  <g
+     id="powerrocker"
+     transform="translate(30,110)"
+     >
+    <rect
+       width="21.5"
+       height="30"
+       y="-50"
+       fill="white"
+       id="rect346" />
+    <rect
+       width="21.5"
+       height="30"
+       fill="white"
+       id="rect348" />
+    <rect
+       width="21.5"
+       height="30"
+       y="50"
+       fill="white"
+       id="rect350" />
+  </g>
+  <!-- https://learn.adafruit.com/adafruit-led-backpack/downloads -->
+  <g
+     id="bicolor"
+     transform="translate(70,110)">
+    <rect
+       fill="pink"
+       width="32"
+       height="32"
+        />
+    <!-- up and down is supposed to be less than 37. I don't liek adafruit specs -->
+    <circle
+       cx="2"
+       cy="-2.3"
+       r="1.1"
+       fill="pink"
+       id="circle355" />
+    <circle
+       cx="30"
+       cy="-2.3"
+       r="1.1"
+       fill="pink"
+    />
+    <circle
+       cx="30"
+       cy="34.5"
+       r="1.1"
+       fill="pink"
+    />
+    <circle
+       cx="2"
+       cy="34.5"
+       r="1.1"
+       fill="pink"
+    />
+  </g>
+  <!-- https://cdn-shop.adafruit.com/datasheets/pec11.pdf -->
+  <g
+     id="buttons"
+     transform="translate(125,65)"
+     >
+    <circle
+       r="6.1"
+       fill="yellow"
+       id="circle362" />
+    <circle
+       cx="60"
+       cy="0"
+       r="3.5"
+       fill="white"
+       id="circle360" />
+    <circle
+       cy="30"
+       r="6.1"
+       fill="white"
+       id="circle364" />
+    <circle
+       cx="30"
+       cy="30"
+       r="6.1"
+       fill="white"
+       id="circle366" />
+    <circle
+       cy="60"
+       r="6.1"
+       fill="white"
+       id="circle368" />
+    <circle
+       cx="30"
+       cy="60"
+       r="6.1"
+       fill="white"
+       id="circle370" />
+    <circle
+       cy="120"
+       r="6.1"
+       fill="#0000ff"
+       id="circle372" />
+    <circle
+       cx="30"
+       cy="90"
+       r="6.1"
+       fill="green"
+       id="circle374" />
+    <circle
+       cx="60"
+       cy="120"
+       r="6.1"
+       fill="red"
+       id="circle376" />
+  </g>
+</svg>
