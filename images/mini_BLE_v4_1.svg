@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="wrap"
+   width="221"
+   height="139"
+   version="1.1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+
+
+
+  <!-- Inkscape cannot convert -->
+  <defs>
+
+    <rect
+      id="boardoutline"
+      stroke="white"
+      x="-27.5"
+      width="52"
+      height="44"
+      stroke-dasharray="1 2"
+     />
+     <!-- Arduino Nano overhangs a bit -->
+
+    <rect
+       id="cap"
+       stroke="gainsboro"
+       width="178"
+       height="95"
+       stroke-dasharray="1 2"
+     />
+
+    <rect
+       id="arduino"
+       stroke="white"
+       width="19"
+       height="43"
+       stroke-dasharray="1 2"
+     />
+
+    <rect
+     id="packoutline"
+     stroke="orange"
+     width="92"
+     height="51"
+     stroke-dasharray="1 2"
+     />
+
+    <rect
+     id="rotaryoutline"
+     stroke="white"
+     width="25"
+     height="25"
+     stroke-dasharray="1 2"
+     />
+
+    <rect
+     id="terminaloutline"
+     stroke="white"
+     width="123.5"
+     height="20"
+     stroke-dasharray="1 2"
+     />
+
+  </defs>
+
+  <desc>
+     Now with quarter size breadboard
+     Now with standard Amazon boxes
+     <!--
+     https://www.amazon.com/gp/product/B09B6Q9FS3/ref=ox_sc_act_title_2?smid=A2WO5FNI6I91SW&th=1
+  -->
+  </desc>
+
+  <!-- https://www.polycase.com/dc-57p -->
+  <g
+    id="outline"
+    transform="translate(10,10)">
+
+    <!-- 5 - 0.125 - 0.125 convert to metric 120.65 but do 120.5 --> 
+    <!-- 8 - 0.125 - 0.125 convert to metric 203.2  but do 203 -->
+    <!-- Radius (5.005 - 4.170) / 2 convert to metric 10.6045, but do 10.7  -->
+    <rect
+      style="fill:#000000;stroke-width:4"
+      width="201"
+      height="119"
+
+      rx="7.5"
+      ry="7.5"
+      id="20" />
+   
+    <use href="#cap"
+      transform="translate(12,12)"
+    />
+  
+  <!-- Corner screw holes-->
+  <!-- vertical screws 4.167 convert to metric 105.84 -->
+  <!-- horizontal screws 3.715 convert to metric 94.36 use 94.36 -->
+  <g
+     id="cornerscrew"
+     transform="translate(100.5, 7)">
+    <!-- This is expected to be deleted -->
+    <circle
+       cx="-94.36"
+       cy="105.84"
+       r="2"
+       fill="white"
+    />
+    <circle
+       cx="-94.36"
+       r="2"
+       fill="white"
+     />
+
+    <circle
+      r="2"
+      fill="white"
+    >
+    Origin
+    </circle>
+
+    <circle
+       cx="94.36"
+       r="2"
+       fill="white"
+    />
+
+    <circle
+       cy="105.84"
+       r="2"
+       fill="white"
+    />
+    <circle
+       cx="94.36"
+       cy="105.84"
+       r="2"
+       fill="white"
+     />
+  </g>
+
+  <g 
+   id="DCplug"
+   transform="translate(66,15)">
+
+    <circle
+      fill="orange"
+      r="4.1"
+      />
+  </g>
+
+
+
+  <!-- Board screw holes-->
+  <g
+    id="boardscrew"
+    transform="translate(65,71)">
+
+    <use href="#boardoutline" 
+     x="1.5"
+     y="-3"
+    />
+
+    <use href="#arduino"
+     x="-9.5"
+     y="-2.5"
+     />
+
+    <circle
+       r="1.5"
+       fill="white"
+    />
+
+    <!-- Pin spacing 14 * 2.54 = 35.56 Then give it 1mm up down-->
+    
+    <rect
+       x="-1.56"
+       y="33.5"
+       fill="white"
+       width="3.1"
+       height="4"
+       rx="1.55"
+       ry="1.55"
+       />
+
+  </g>
+  <!-- Mounting Size: 26 x 21.5mm -->
+  <g
+    id="powerrocker"
+    transform="translate(20,25)"
+    >
+
+    <!-- D14, D15 -->
+    <circle
+       r="10.5"
+       fill="white"
+    />
+    <rect
+      fill="white"
+      width="2"
+      height="2"
+      x="-1"
+      y="-12"
+    />
+
+
+   <!-- D16, D17 -->
+   <circle
+       r="10.5"
+       cy="35"
+       fill="white"
+    />
+    <rect
+      fill="white"
+      width="2"
+      height="2"
+      x="10"
+      y="34.5"
+    />
+
+   <!-- D20, D21 -->
+   <circle
+       r="10.5"
+       cy="70"
+       fill="white"
+    />
+    <rect
+      fill="white"
+      width="2"
+      height="2"
+      x="10"
+      y="69.5"
+    />
+
+  </g>
+  <!-- https://learn.adafruit.com/adafruit-led-backpack/downloads -->
+  <g
+     id="bicolor"
+     transform="translate(50, 27)">
+    <rect
+       fill="pink"
+       width="32"
+       height="32"
+        />
+    <!-- up and down is supposed to be less than 37. I don't like adafruit specs -->
+    <circle
+       cx="2"
+       cy="-2.3"
+       r="1.1"
+       fill="pink"
+       id="circle355" />
+    <circle
+       cx="30"
+       cy="-2.3"
+       r="1.1"
+       fill="pink"
+    />
+    <circle
+       cx="30"
+       cy="34.5"
+       r="1.1"
+       fill="pink"
+    />
+    <circle
+       cx="2"
+       cy="34.5"
+       r="1.1"
+       fill="pink"
+    />
+  </g>
+  <!-- https://cdn-shop.adafruit.com/datasheets/pec11.pdf -->
+  <g
+     id="buttons"
+     transform="translate(100, 23)"
+     >
+    <!-- D13 also known as LED_BUILTIN -->
+    <circle
+      cx="25"
+      r="6.1"
+      fill="yellow"
+      />
+
+    <!-- D12 -->
+    <circle
+       cx="50"
+       r="6.1"
+       fill="yellow"
+       />
+    
+    <!-- This is a separator so that it is obvious which switch controls which section -->
+    <rect
+       x="19"
+       y="11"
+       fill="gray"
+       width="37"
+       height="2"
+       rx="1"
+       ry="1"
+       />
+
+    <use href="#rotaryoutline"
+      x="63"
+      y="-12"
+    />
+
+    <circle
+      cx="75"
+      r="3.5"
+      fill="white"
+      >
+      <desc>Rotary Encoder</desc>
+    </circle>
+
+    <!-- D11 -->
+    <circle
+       cx="25"
+       cy="25"
+       r="6.1"
+       fill="white"
+       />
+
+    <!-- another separator -->
+    <rect
+       x="19"
+       y="37"
+       fill="gray"
+       width="37"
+       height="2"
+       rx="1"
+       ry="1"
+       />
+
+    <!-- D10 -->
+    <circle
+       cx="50"
+       cy="25"
+       r="6.1"
+       fill="white"
+       />
+
+    <!-- D9 -->
+    <circle
+       cx="75"
+       cy="25"
+       r="6.1"
+       fill="white"
+       />
+
+
+    <path transform="translate(72,34), scale(0.05)"
+       d="M94.9 71.35c-8.08-7.63-21.82-13.99-30.91-18.2c-1.54-.71-2.93-1.35-4.11-1.92
+       c-3.43-1.65-8.12-6.22-6.1-11.47c1.36-3.55 4.81-5.34 10.27-5.34c1.75 0 3.67.2 5.72.58
+       c7.12 1.33 12.52 3.99 15.58 5.5c.38.19.82.21 1.22.07c.39-.15.72-.45.89-.84
+       l7.01-15.81c.31-.69.07-1.51-.57-1.93c-4.94-3.28-17.27-8.15-30.97-8.15
+       c-1.98 0-3.95.1-5.87.3c-10.92 1.12-21.86 4.03-27.92 17.64
+       c-3.78 8.47-3.77 18.01.01 24.89c4.04 7.51 10.66 10.87 19.04 15.11
+       l1.08.55c6.05 3.02 13.3 6.38 18.07 8.59c7.05 3.4 9.66 9.44 8.04 13.08
+       c-2.61 5.87-8.38 7.16-18.36 4.33c-8.81-2.39-16.94-9.14-19.21-11.15
+       c-.34-.3-.79-.44-1.25-.38c-.45.06-.85.32-1.1.69L24.6 104.14c-.41.63-.32 1.46.22 1.98
+       c5.63 5.43 10.22 8.59 18.17 12.5c5.35 2.63 13.18 4.21 20.95 4.21
+       c8.12 0 27.95-1.88 36.65-19.26c5.55-11.12 3.48-22.84-5.69-32.22z"
+       fill="white">
+       <desc>S</desc>
+    </path>
+
+    <!-- Halt -->
+    <circle
+       cy="25"
+       r="6.1"
+       fill="red"
+       />
+    
+    <!-- make it a tad bigger -->
+    <path transform="translate(-3,9), scale(0.052)"
+       d="M110.7 117.03L85.59 83.64
+       c13.01-5.37 22.18-18.08 22.18-32.87
+       c0-19.63-16.13-35.61-35.96-35.61H33.95
+       c-.15 0-.28.06-.42.09h-6.46c-1.24 0-2.24 1-2.24 2.24
+       v100.96c0 1.24 1 2.24 2.24 2.24h21.89
+       c1.24 0 2.24-1 2.24-2.24V86.37h8.64l25.2 33.51
+       c.45.59 1.15.94 1.89.94h21.89c.9 0 1.72-.51 2.11-1.31
+       c.4-.8.31-1.76-.23-2.48z" fill="red">
+       <desc>R</desc>
+    </path>
+
+
+
+    <!-- Next row -->
+
+    <!-- D8 -->
+    <circle
+       cx="25"
+       cy="50"
+       r="6.1"
+       fill="white"
+       />
+
+    <!-- D7 -->
+    <circle
+       cx="50"
+       cy="50"
+       r="6.1"
+       fill="white"
+       />
+
+    
+    <path transform="translate(-3,34), scale(0.052)"
+      d="M65.71 15.31h-43.6c-1.25 0-2.24 1-2.24 2.24v100.96
+      c0 1.24 1 2.24 2.24 2.24H65.7c30.15 0 50.43-21.19 50.43-52.73
+      c0-31.53-20.27-52.71-50.42-52.71z" fill="red">
+      <desc>D</desc>
+    </path>
+
+
+
+    <!-- D6 -->
+    <circle
+       r="6.1"
+       fill="red"
+       />
+
+
+    <!-- next row -->
+    <!-- D5 -->
+    <circle
+       cx="50"
+       cy="75"
+       r="6.1"
+       fill="green"
+       />
+
+    <!-- D4 -->
+    <circle
+       cx="75"
+       cy="75"
+       r="6.1"
+       fill="green"
+       />
+
+    <!-- D3 -->
+    <circle
+      cx="25"
+       cy="75"
+       r="6.1"
+       fill="blue"
+       />
+
+
+    <rect
+       x="12"
+       y="-5"
+       fill="gray"
+       width="2"
+       height="60"
+       rx="1"
+       ry="1"
+       >
+       <desc>Vertical divider</desc>
+     </rect>
+
+
+
+    <circle
+       cy="50"
+       r="6.1"
+       fill="red"
+       />
+        <!-- D2 -->
+    <path 
+      transform="translate(-3,59), scale(0.05)"
+      d="
+         M109.48 16.34
+         H84.84
+         c-1.28 0-2.33 1.04-2.33 2.33
+         v36.27
+         H45.5
+         V18.68
+         c0-1.29-1.04-2.33-2.34-2.33
+         H18.53
+         a2.34 2.34 0 0 0-2.34 2.33v99.96
+         c0 1.29 1.05 2.33 2.34 2.33h24.63
+         a2.34 2.34 0 0 0 2.34-2.33
+         V76.15h37.02
+         v42.48c0 1.29 1.05 2.33 2.33 2.33
+         h24.64c1.29 0 2.33-1.05 2.33-2.33
+         V18.68
+         a2.35 2.35 0 0 0-2.34-2.34
+         z"
+      fill="red">
+      <desc>H</desc>
+    </path>
+
+  </g>
+
+
+</svg>
