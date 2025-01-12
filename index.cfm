@@ -138,6 +138,8 @@
 			<a href="?mode=reverse">Upside down</a>
 		</cfif>
 		<a href="cabinet.cfm">Cabinet</a>
+		<a href="build.html">Build</a>
+		<a href="build_parts.html">Build Parts</a>
 	</p>
 
 	
