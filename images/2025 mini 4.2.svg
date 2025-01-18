@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<svg
+   id="wrap"
+   width="300mm"
+   height="100mm"
+   version="1.1"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="mini_panel.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs382" />
+  <sodipodi:namedview
+     id="namedview380"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.3563218"
+     inkscape:cx="112.43644"
+     inkscape:cy="87.368644"
+     inkscape:window-width="1845"
+     inkscape:window-height="1212"
+     inkscape:window-x="-6"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="wrap"
+     inkscape:document-units="mm" />
+
+  <defs>
+    <rect
+      id="arduino"
+      stroke="white"
+      width="52"
+      height="44"
+      stroke-dasharray="1 2"
+     />
+  </defs>
+
+
+  <rect
+     style="fill:black;stroke-width:3.77953"
+     width="290mm"
+     height="80mm"
+     x="5mm"
+     y="5mm"
+     rx="20"
+     ry="20"
+     id="rect326" />
+
+
+ 
+  <!-- Adafruit Quarter: 0.1" × 14 = 35.56mm -->
+  <!-- Adafruit 23017: 1.58" = 40.16mm --><!-- NO -->
+  <!-- Adafruit Half: 0.1" × 29 = 73.37mm -->
+  <g id="terminal"
+     transform="matrix(3.7795276,0,0,3.7795276,-27.795276,-27.795276)
+     translate(240,55)">
+     <!--
+     <use href="#arduino"
+       x="-9"
+       y="-20"
+       />
+     -->
+     <circle
+       r="1.6"
+       fill="#ffffff"
+       id="circle12" />
+
+
+
+     <circle
+       cx="35.56"
+       r="1.6"
+       fill="#ffffff"
+       id="circle13" />
+     <!--
+     <circle
+       cx="40.16"
+       r="1.6"
+       fill="#ffffff"
+       id="circle13" />
+    
+     <circle
+       cx="73.37"
+       r="1.6"
+       fill="#ffffff"
+       id="circle14" />
+      -->
+
+  </g>
+
+  <!-- Corner screw holes-->
+  <g
+     id="cornerscrew"
+     transform="
+          matrix(3.7795276,0,0,3.7795276,-27.795276,-27.795276)
+          translate(20,20)">
+    <circle
+       r="2"
+       fill="#ffffff"
+       id="circle328" />
+    <circle
+       cx="275"
+       r="2"
+       fill="#ffffff"
+       id="circle330" />
+    <circle
+       cy="65"
+       r="2"
+       fill="#ffffff"
+       id="circle332" />
+    <circle
+       cx="275"
+       cy="65"
+       r="2"
+       fill="#ffffff"
+       id="circle334" />
+  </g>
+
+  <!-- Mounting Size: 26 x 21.5mm -->
+  <g
+     id="powerrocker"
+     transform="matrix(3.7795276,0,0,3.7795276,-27.795276,-27.795276)
+     translate(80,45)">
+
+     <path transform="translate(-4, -23), scale(0.06)"
+          d="M111.84 15.36H16.16
+          c-1.24 0-2.24 1-2.24 2.24v17.99
+          c0 1.24 1 2.24 2.24 2.24h34.65v80.73
+          c0 1.24 1 2.24 2.24 2.24h21.9
+          c1.24 0 2.24-1 2.24-2.24V37.83h34.65
+          c1.24 0 2.24-1 2.24-2.24V17.6
+          c0-1.24-1-2.24-2.24-2.24z" fill="beige">
+     </path>
+     <circle
+       r="3"
+       cy="35"
+       fill="gray"
+       id="circle2" />
+     <circle
+       r="3"
+       cx="20"
+       cy="20"
+       fill="gray"
+       id="circle12" />
+     <circle
+       r="3"
+       cx="20"
+       cy="35"
+       fill="gray"
+       id="circle12" />  
+
+     <circle
+       r="6.1"
+       fill="orange"
+       id="circle370" />
+     <circle
+       cx="20"
+       cy="-20"
+       r="6.1"
+       fill="blue"
+       id="circle370" />
+     <circle
+       cx="20"
+       r="6.1"
+       fill="white"
+       id="circle370" />
+     <circle
+       cy="20"
+       r="6.1"
+       fill="yellow"
+       id="circle370" />
+
+
+     <path transform="translate(36, -23), scale(0.06)"
+          d="M76.32 16.27H51.68
+          c-1.29 0-2.33 1.05-2.33 2.33
+          v99.96
+          c0 1.29 1.04 2.33 2.33 2.33h24.64
+          c1.29 0 2.33-1.04 2.33-2.33V18.6
+          c0-1.28-1.04-2.33-2.33-2.33z" fill="white">
+          <desc>Inner</desc>
+     </path>
+     <circle
+       r="3"
+       cx="40"
+       cy="35"
+       fill="gray"
+       id="circle5" />
+     <circle
+       r="3"
+       cx="60"
+       cy="20"
+       fill="gray"
+       id="circle5" />
+     <circle
+       r="3"
+       cx="60"
+       cy="35"
+       fill="gray"
+       id="circle5" />
+
+     <circle
+       r="6.1"
+       cx="40"
+       fill="green"
+       id="circle370" />
+     
+     <circle
+       cx="60"
+       r="6.1"
+       fill="white"
+       id="circle371" />
+     
+     <circle
+       cx="60"
+       cy="-20"
+       r="6.1"
+       fill="blue"
+       id="circle370" />
+     <circle
+       cx="40"
+       cy="20"
+       r="6.1"
+       fill="yellow"
+       id="circle370" />
+
+
+    <!-- make it a tad bigger -->
+    <path transform="translate(76, -23), scale(0.06)"
+       d="M110.7 117.03L85.59 83.64
+       c13.01-5.37 22.18-18.08 22.18-32.87
+       c0-19.63-16.13-35.61-35.96-35.61H33.95
+       c-.15 0-.28.06-.42.09h-6.46c-1.24 0-2.24 1-2.24 2.24
+       v100.96c0 1.24 1 2.24 2.24 2.24h21.89
+       c1.24 0 2.24-1 2.24-2.24V86.37h8.64l25.2 33.51
+       c.45.59 1.15.94 1.89.94h21.89c.9 0 1.72-.51 2.11-1.31
+       c.4-.8.31-1.76-.23-2.48z" fill="white">
+       <desc>Reverse</desc>
+    </path>
+    <circle
+       r="3"
+       cx="80"
+       cy="35"
+       fill="gray"
+       id="circle32" />
+    <circle
+       r="3"
+       cx="100"
+       cy="35"
+       fill="gray"
+       id="circle33" />
+    <circle
+       r="3"
+       cx="100"
+       cy="20"
+       fill="gray"
+       id="circle33" />
+     
+     <circle
+       r="6.1"
+       cx="80"
+       fill="orange"
+       id="circle370" />
+     <circle
+       cx="100"
+       r="6.1"
+       fill="white"
+       id="circle371" />
+
+     <circle
+       cx="100"
+       cy="-20"
+       r="6.1"
+       fill="blue"
+       id="circle371" />
+     <circle
+       r="6.1"
+       cx="80"
+       cy="20"
+       fill="yellow"
+       id="circle370" />
+
+
+     <path transform="translate(116, -23), scale(0.06)"
+          d="M64.01 15.06
+          c-34.13 0-55.46 24.1-55.46 53.82
+          c0 29.73 21.33 53.82 55.46 53.82
+          c34.12 0 55.45-24.1 55.45-53.82
+          c-.01-29.73-21.33-53.82-55.45-53.82z" fill="white">
+          <desc>Outer</desc>
+     </path>
+     <circle
+       r="3"
+       cx="120"
+       cy="35"
+       fill="gray"
+       id="circle42" />
+     <circle
+       r="3"
+       cx="140"
+       cy="20"
+       fill="gray"
+       id="circle43" />
+     <circle
+       r="3"
+       cx="140"
+       cy="35"
+       fill="gray"
+       id="circle43" />
+
+     <circle
+       r="6.1"
+       cx="120"
+       fill="green"
+       id="circle370" />
+
+     <circle
+       cx="140"
+       r="6.1"
+       fill="white"
+       id="circle371" />
+     <circle
+       cx="140"
+       cy="-20"
+       r="6.1"
+       fill="blue"
+       id="circle371" />
+     <circle
+       r="6.1"
+       cx="120"
+       cy="20"
+       fill="yellow"
+       id="circle370" />
+
+
+     <circle
+       cx="170"
+       cy="-20"
+       r="6.1"
+       fill="red"
+       id="circle371" />
+
+     <!-- Status -->
+     <circle
+       r="3"
+       cx="-35"
+       cy="35"
+       fill="gray"
+       id="circle12" />
+</g>
+
+  <!-- https://www.amazon.com/TWTADE-Latching-Rocker-Position-KCD3-101/dp/B0B6QWBL5Y/ref=pd_ci_mcx_di_int_sccai_cn_d_sccl_3_2/138-5720515-7708965?pd_rd_w=wMdsG&content-id=amzn1.sym.751acc83-5c05-42d0-a15e-303622651e1e&pf_rd_p=751acc83-5c05-42d0-a15e-303622651e1e&pf_rd_r=SV1TM1JJPAQQYM6RF98A&pd_rd_wg=75kke&pd_rd_r=bc5e2aa3-76d1-4b59-bbb3-34b57c953d51&pd_rd_i=B0B6QWBL5Y&psc=1 -->
+  <g
+     id="woodland"
+     transform="matrix(3.7795276,0,0,3.7795276,-27.795276,-27.795276)
+     translate(30,35)">
+
+     <rect
+       width="11"
+       height="28"
+
+       fill="#ffffff"
+       id="rect302" />
+
+     <rect
+       width="11"
+       height="28"
+       x="20"
+       fill="#ffffff"
+       id="rect302" />
+
+
+   </g>
+
+   <!-- Signature -->
+     <g
+     id="signature"
+     transform="matrix(3.7795276,0,0,3.7795276,-27.795276,-27.795276)
+     translate(270,75)">
+     <path transform="scale(0.05)" 
+          d="M100.08 16.44H75.44
+          c-1.24 0-2.24 1-2.24 2.24v45.53
+          c.31 10.84-.18 23.69-1.52 25.89
+          c-.1.13-.2.28-.27.43
+          c-1.6 3.33-6.9 6.78-12.99 6.78
+          c-6.33 0-13.78-5.46-15.94-11.68
+          a2.24 2.24 0 0 0-2.79-1.41
+          l-20.47 6.41
+          c-1.06.33-1.7 1.38-1.53 2.48
+          c.01.07.03.14.04.2
+          c2.32 17.58 18.94 29.38 41.46 29.38
+          c22.53 0 39.16-11.81 41.48-29.4
+          c.02-.1.04-.19.05-.29
+          c1.56-15.02 1.58-28.71 1.58-28.85V18.68
+          c.02-1.23-.98-2.24-2.22-2.24z" fill="#40C0E7">J</path>
+
+     <path transform="translate(6, 0), scale(0.05)"
+          d="M111.53 18.49
+          c-.01-.01-.01-.03-.02-.04
+          c-.02-.25-.1-.5-.2-.74
+          c-.03-.06-.06-.11-.09-.17
+          c-.04-.07-.07-.14-.11-.21
+          c-.08-.12-.19-.23-.29-.33
+          c-.03-.02-.04-.05-.07-.07
+          c-.18-.17-.4-.29-.63-.4
+          a1.22 1.22 0 0 1-.17-.07
+          a2.56 2.56 0 0 0-.78-.14h-22.3
+          c-.31 0-.59.07-.87.18
+          c-.08.03-.14.07-.23.11
+          c-.19.11-.37.23-.53.38
+          c-.03.04-.09.06-.13.1
+          c-.03.03-.04.07-.05.1
+          c-.16.19-.28.4-.38.64
+          c-.02.04-.05.08-.07.13
+          c0 .01-.01.02-.01.03
+          L64 85.16
+          L43.39 17.99
+          c0-.01-.01-.02-.01-.03
+          c-.02-.05-.05-.09-.07-.13
+          a2.38 2.38 0 0 0-.37-.64
+          c-.03-.03-.04-.07-.06-.1
+          c-.04-.04-.1-.06-.13-.1
+          c-.16-.15-.33-.28-.52-.38
+          c-.08-.04-.15-.08-.23-.11
+          c-.28-.11-.56-.18-.87-.18
+          h-22.3
+          c-.27 0-.52.06-.78.14
+          c-.05.02-.11.04-.17.07
+          c-.24.11-.45.23-.64.4
+          c-.03.03-.04.05-.06.07
+          c-.11.11-.21.21-.3.33
+          c-.05.07-.07.14-.11.21
+          c-.03.06-.07.11-.09.17
+          c-.1.24-.17.48-.21.74
+          c0 .01-.01.03-.01.04
+          l-8.45 99.96
+          c-.06.66.17 1.31.61 1.8
+          c.45.48 1.09.77 1.74.77
+          h20.91
+          c1.22 0 2.23-.92 2.36-2.14
+          l4.19-42.6
+          l16.15 43.2
+          c.01.01.02.02.03.04
+          c.07.19.17.38.29.54
+          l.03.03
+          c.02.04.07.07.09.1
+          c.12.13.24.24.37.35
+          l.18.12
+          c.13.08.27.14.4.2
+          a2.254 2.254 0 0 0 .83.17
+          H71.8
+          c.22 0 .44-.04.65-.1
+          c.06-.02.12-.04.18-.07
+          c.15-.05.28-.12.4-.2
+          c.06-.04.12-.08.17-.12
+          c.14-.1.25-.22.37-.35
+          c.03-.04.07-.07.1-.1
+          c0-.01.02-.02.03-.03
+          c.12-.17.22-.35.3-.54
+          c0-.01.01-.02.02-.04
+          l16.15-43.2
+          l4.2 42.61
+          a2.366 2.366 0 0 0 2.35 2.14
+          h20.9
+          c.66 0 1.3-.28 1.74-.77
+          c.45-.49.67-1.14.62-1.8
+          l-8.45-99.97z" fill="#40C0E7">M</path>
+     </g>
+</svg>

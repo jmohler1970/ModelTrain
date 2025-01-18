@@ -124,6 +124,8 @@
 	});
 </script>
 
+	<cfinclude template="common/menu.cfm">
+
 	<p>
 		<a href="South.cfm">South</a>
 		<a href="index.cfm">North</a>
