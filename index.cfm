@@ -126,29 +126,8 @@
 
 	<cfinclude template="common/menu.cfm">
 
-	<p>
-		<a href="South.cfm">South</a>
-		<a href="index.cfm">North</a>
-		<cfif url.mode EQ "both">
-			Both
-		<cfelse>
-			<a href="?mode=both">Both</a>
-		</cfif>
-		<cfif url.mode EQ "reverse">
-			Upsidedown
-		<cfelse>
-			<a href="?mode=reverse">Upside down</a>
-		</cfif>
-		<a href="cabinet.cfm">Cabinet</a>
-		<a href="build.html">Build</a>
-		<a href="build_parts.html">Build Parts</a>
-	</p>
-
-	
 
 
-	<p></p>
-	<p></p>
 
 	<cfswitch expression="#url.mode#">
 	<cfcase value="both">
@@ -160,6 +139,10 @@
 		<cfinclude template="images/SouthModel_autopower.svg">
 		<br />
 		<cfinclude template="images/NorthModel_autopower.svg">
+	</cfcase>
+	<cfcase value="south">
+		<h1>South</h1>
+		<cfinclude template="images/SouthModel_autopower.svg">
 	</cfcase>
 	<cfdefaultcase>
 		<h1>North</h1>

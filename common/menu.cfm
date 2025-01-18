@@ -10,7 +10,7 @@
 			   <a class="nav-link" aria-current="page" href="index.cfm">North</a>
 			 </li>
 			 <li class="nav-item">
-			   <a class="nav-link" href="South.cfm">South</a>
+			   <a class="nav-link" href="index.cfm?mode=south">South</a>
 			 </li>
 			 <li class="nav-item">
 			   <a class="nav-link" href="index.cfm?mode=both">Both</a>
